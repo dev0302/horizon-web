@@ -25,16 +25,50 @@ function initTeamTabs() {
   function initAboutAnimation() {
     const aboutObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting && entry.target.classList.contains("content-left")) {
-          entry.target.classList.add("scroll-reveal-left");
+        if (entry.isIntersecting) {
+          entry.target.classList.add("scroll-reveal");
         }
       });
     }, { threshold: 0.3 });
   
     const aboutTarget = document.querySelector(".content-left");
     if (aboutTarget) {
-      aboutTarget.classList.add("scroll-hidden");
       aboutObserver.observe(aboutTarget);
+    }
+  }
+  
+  // Family section scroll animations
+  function initFamilyAnimations() {
+    const familyObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("scroll-reveal");
+        }
+      });
+    }, { threshold: 0.2 });
+
+    // Observe mentor section
+    const mentorSection = document.querySelector(".testimonial-outer");
+    if (mentorSection) {
+      familyObserver.observe(mentorSection);
+    }
+
+    // Observe team card section
+    const teamCard = document.querySelector(".card");
+    if (teamCard) {
+      familyObserver.observe(teamCard);
+    }
+
+    // Observe core team section
+    const coreTeam = document.querySelector(".testimonial-container");
+    if (coreTeam) {
+      familyObserver.observe(coreTeam);
+    }
+
+    // Observe executive team section
+    const execTeam = document.querySelector(".member-list-container");
+    if (execTeam) {
+      familyObserver.observe(execTeam);
     }
   }
   
@@ -57,5 +91,6 @@ function initTeamTabs() {
   document.addEventListener('DOMContentLoaded', () => {
     initTeamTabs();
     initAboutAnimation();
+    initFamilyAnimations();
     initEventAnimations();
   });

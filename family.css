@@ -34,6 +34,14 @@
     padding-bottom: 4rem;
     padding-left: 2rem;
     padding-right: 2rem;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.testimonial-container.scroll-reveal {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .testimonial-content {
@@ -71,7 +79,6 @@
     /* ✨ Glowing rotation animation */
     animation: glowRotate 6s linear infinite;
 }
-
 
 .testimonial-card:hover {
     transform: scale(1.05);
@@ -119,7 +126,6 @@
     color: var(--gray);
 }
 
-
 @keyframes glowRotate {
     0% {
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.2), 0 0 20px rgba(56, 189, 248, 0.1);
@@ -150,6 +156,14 @@
     padding: 1.5rem;
     color: #f8fafc;
     font-family: 'Segoe UI', sans-serif;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .member-list-container.scroll-reveal {
+    opacity: 1;
+    transform: translateY(0);
   }
   
   .department {
@@ -195,7 +209,6 @@
 
 .department:hover {
     transform: translateY(-3px);
-    background: rgba(255, 255, 255, 0.08);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -250,6 +263,20 @@
     font-weight: 500;
     color: var(--text-secondary);
     font-size: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.members:hover {
+    background: rgba(79, 70, 229, 0.2);
+    color: #a5b4fc;
+    transform: translateX(3px);
 }
 
 .name-grid {
@@ -294,14 +321,28 @@
 .icon-mic:before { content: '\f130'; }
 .icon-megaphone:before { content: '\f675'; }
 
-
-
-.testimonial-outer{
+.testimonial-outer {
     border: 1px rgba(255, 255, 255, 0.208) solid;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
+.testimonial-outer.scroll-reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
 
+.card {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
 
+.card.scroll-reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 /* Responsive Breakpoints */
 @media (max-width: 768px) {

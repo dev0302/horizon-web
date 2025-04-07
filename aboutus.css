@@ -19,23 +19,14 @@
     display: flex;
     flex-direction: column;
     gap:1.4rem;
-  
-    animation: slideFromLeft 1s ease forwards;
     opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
   }
   
-  
-  
-  @keyframes slideFromLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(0);
-    }
-    
+  .content-left.scroll-reveal {
+    opacity: 1;
+    transform: translateX(0);
   }
   
   #about_us_para{
