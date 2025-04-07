@@ -39,37 +39,24 @@ function initTeamTabs() {
   
   // Family section scroll animations
   function initFamilyAnimations() {
-    const familyObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("scroll-reveal");
-        }
-      });
-    }, { threshold: 0.2 });
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
 
-    // Observe mentor section
-    const mentorSection = document.querySelector(".testimonial-outer");
-    if (mentorSection) {
-      familyObserver.observe(mentorSection);
-    }
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('scroll-reveal');
+            }
+        });
+    }, observerOptions);
 
-    // Observe team card section
-    const teamCard = document.querySelector(".card");
-    if (teamCard) {
-      familyObserver.observe(teamCard);
-    }
-
-    // Observe core team section
-    const coreTeam = document.querySelector(".testimonial-container");
-    if (coreTeam) {
-      familyObserver.observe(coreTeam);
-    }
-
-    // Observe executive team section
-    const execTeam = document.querySelector(".member-list-container");
-    if (execTeam) {
-      familyObserver.observe(execTeam);
-    }
+    // Observe all team sections
+    document.querySelectorAll('.testimonial-outer, .card, .testimonial-container, .member-list-container').forEach(el => {
+        observer.observe(el);
+    });
   }
   
   // Event timeline scroll animation
