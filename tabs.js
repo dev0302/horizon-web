@@ -7,16 +7,30 @@ function initTeamTabs() {
     const tabButtons = document.querySelectorAll('.tab-btn');
     const tabContents = document.querySelectorAll('.tab-content');
   
-    tabButtons.forEach(btn => {
-      btn.addEventListener('click', () => {
+    tabButtons.forEach(button => {
+      button.addEventListener('click', () => {
         // Remove active class from all buttons and contents
-        tabButtons.forEach(b => b.classList.remove('active'));
-        tabContents.forEach(tc => tc.classList.remove('active'));
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        tabContents.forEach(content => content.classList.remove('active'));
   
         // Add active class to clicked button and corresponding content
-        btn.classList.add('active');
-        const tabId = btn.getAttribute('data-tab');
-        document.getElementById(tabId).classList.add('active');
+        button.classList.add('active');
+        const tabId = button.getAttribute('data-tab');
+        const activeContent = document.getElementById(tabId);
+        activeContent.classList.add('active');
+
+        // Show search container for both tabs
+        const searchContainers = document.querySelectorAll('.search-container');
+        searchContainers.forEach(container => {
+            container.style.display = 'block';
+        });
+
+        // Clear search when switching tabs
+        const searchInputs = document.querySelectorAll('.search-input');
+        searchInputs.forEach(input => {
+            input.value = '';
+            input.dispatchEvent(new Event('input'));
+        });
       });
     });
   }
@@ -75,131 +89,88 @@ function initTeamTabs() {
   }
   
   function initTeamSearch() {
-    const searchInput = document.getElementById('search-input');
-    const searchButton = document.getElementById('search-button');
-    const searchContainer = document.querySelector('.search-container');
-    const suggestionsContainer = document.getElementById('search-suggestions');
-    const tabButtons = document.querySelectorAll('.tab-btn');
-    const tabContents = document.querySelectorAll('.tab-content');
+    const searchInputs = document.querySelectorAll('.search-input');
+    const searchButtons = document.querySelectorAll('.search-button');
+    const suggestionsContainers = document.querySelectorAll('.search-suggestions');
+    const memberLists = document.querySelectorAll('.name-grid span, .testimonial-details h3');
 
-    // Focus the input when the search button is clicked
-    searchButton.addEventListener('click', function() {
-        searchInput.focus();
-    });
+    searchInputs.forEach((searchInput, index) => {
+        const suggestionsContainer = suggestionsContainers[index];
 
-    // Show suggestions while typing
-    searchInput.addEventListener('input', function(e) {
-        const searchTerm = e.target.value.toLowerCase();
-        const activeTab = document.querySelector('.tab-content.active');
-        
-        if (activeTab.id === 'execoms' && searchTerm.length > 0) {
-            const teamMembers = activeTab.querySelectorAll('.name-grid span');
-            const suggestions = [];
-            
-            teamMembers.forEach(member => {
-                const memberName = member.textContent.toLowerCase();
-                if (memberName.includes(searchTerm)) {
-                    suggestions.push({
-                        name: member.textContent,
-                        element: member
-                    });
-                }
-            });
-
-            // Update suggestions container
-            suggestionsContainer.innerHTML = '';
-            suggestions.forEach(suggestion => {
-                const div = document.createElement('div');
-                div.className = 'suggestion-item';
-                div.textContent = suggestion.name;
-                div.addEventListener('click', () => {
-                    searchInput.value = suggestion.name;
-                    suggestionsContainer.classList.remove('active');
-                    
-                    // Remove any existing highlights
-                    const allMembers = activeTab.querySelectorAll('.name-grid span');
-                    allMembers.forEach(member => {
-                        member.classList.remove('member-highlight');
-                    });
-                    
-                    // Add highlight to the selected member
-                    suggestion.element.classList.add('member-highlight');
-                    
-                    // Scroll to the member with smooth behavior
-                    suggestion.element.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'center'
-                    });
-                });
-                suggestionsContainer.appendChild(div);
-            });
-
-            suggestionsContainer.classList.toggle('active', suggestions.length > 0);
-        } else {
-            suggestionsContainer.classList.remove('active');
-        }
-    });
-
-    // Hide suggestions when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!searchContainer.contains(e.target)) {
-            suggestionsContainer.classList.remove('active');
-        }
-    });
-
-    // Search functionality on Enter key press
-    searchInput.addEventListener('keydown', function(e) {
-        if (e.key === 'Enter') {
-            e.preventDefault();
-            searchContainer.classList.add('spinning');
-            suggestionsContainer.classList.remove('active');
-            
+        // Show suggestions while typing
+        searchInput.addEventListener('input', function(e) {
             const searchTerm = e.target.value.toLowerCase();
-            highlightAndScrollToMember(searchTerm);
+            suggestionsContainer.innerHTML = '';
             
-            // Remove the spinning class after animation completes
-            setTimeout(() => {
-                searchContainer.classList.remove('spinning');
-            }, 1000);
-        }
-    });
+            if (searchTerm.length > 0) {
+                const matches = Array.from(memberLists).filter(member => 
+                    member.textContent.toLowerCase().includes(searchTerm)
+                );
 
-    // Helper function to highlight and scroll to member
-    function highlightAndScrollToMember(searchTerm) {
-        const activeTab = document.querySelector('.tab-content.active');
-        if (activeTab.id === 'execoms') {
-            const teamMembers = activeTab.querySelectorAll('.name-grid span');
-            let firstMatch = null;
-
-            teamMembers.forEach(member => {
-                member.classList.remove('member-highlight');
-                const memberName = member.textContent.toLowerCase();
-                if (searchTerm.length > 0 && memberName.includes(searchTerm)) {
-                    member.classList.add('member-highlight');
-                    if (!firstMatch) {
-                        firstMatch = member;
-                    }
+                if (matches.length > 0) {
+                    matches.forEach(match => {
+                        const suggestion = document.createElement('div');
+                        suggestion.className = 'suggestion-item';
+                        suggestion.textContent = match.textContent;
+                        
+                        // Click suggestion to fill search and highlight member
+                        suggestion.addEventListener('click', () => {
+                            searchInput.value = match.textContent;
+                            suggestionsContainer.classList.remove('active');
+                            
+                            // Remove any existing highlights
+                            memberLists.forEach(m => m.classList.remove('member-highlight'));
+                            
+                            // Add highlight to the selected member
+                            match.classList.add('member-highlight');
+                            
+                            // Scroll to the member with smooth behavior
+                            match.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'center'
+                            });
+                        });
+                        
+                        suggestionsContainer.appendChild(suggestion);
+                    });
+                    suggestionsContainer.classList.add('active');
+                } else {
+                    suggestionsContainer.classList.remove('active');
                 }
-            });
-
-            if (firstMatch) {
-                firstMatch.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            } else {
+                suggestionsContainer.classList.remove('active');
+                // Remove highlights when search is cleared
+                memberLists.forEach(m => m.classList.remove('member-highlight'));
             }
-        }
-    }
+        });
+
+        // Hide suggestions when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.search-container')) {
+                suggestionsContainer.classList.remove('active');
+            }
+        });
+
+        // Hide suggestions on Enter key
+        searchInput.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+                suggestionsContainer.classList.remove('active');
+            }
+        });
+    });
 
     // Clear search when switching tabs
+    const tabButtons = document.querySelectorAll('.tab-btn');
     tabButtons.forEach(button => {
         button.addEventListener('click', () => {
-            searchInput.value = '';
-            suggestionsContainer.classList.remove('active');
-            const activeTab = document.querySelector('.tab-content.active');
-            if (activeTab.id === 'execoms') {
-                const teamMembers = activeTab.querySelectorAll('.name-grid span');
-                teamMembers.forEach(member => {
-                    member.classList.remove('member-highlight');
-                });
-            }
+            searchInputs.forEach(input => {
+                input.value = '';
+                input.dispatchEvent(new Event('input'));
+            });
+            suggestionsContainers.forEach(container => {
+                container.classList.remove('active');
+            });
+            memberLists.forEach(m => m.classList.remove('member-highlight'));
         });
     });
   }

@@ -421,7 +421,9 @@
     .testimonial-card {
         padding: 1rem;
         max-width: 100%;
-        min-height: 280px;
+        height: 120px;
+        min-height: 120px;
+        max-height: 120px;
     }
     
     .testimonial-avatar img {
@@ -446,18 +448,56 @@
     .testimonial-details p {
         font-size: 0.8rem;
     }
-    
-    .statistics-section {
-        padding: 3rem 0;
-        scroll-margin-top: 1rem;
+
+    /* Team tab content */
+    .member-list-container {
+        padding: 1.5rem;
     }
-    
+
     .department {
         padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .department h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .department p {
+        font-size: 0.9rem;
+        margin: 0.3rem 0;
+    }
+
+    .name-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .name-grid span {
+        font-size: 0.95rem;
+        padding: 0.5rem 0.75rem;
+    }
+
+    /* Team heads styles */
+    .team-heads .label {
+        font-size: 1rem;
+    }
+
+    .team-heads .members {
+        gap: 1rem;
+    }
+
+    .team-heads .members span {
+        font-size: 0.95rem;
+        padding: 0.5rem 0.75rem;
+    }
+
+    .team-heads .special-name {
+        font-size: 0.95rem;
     }
 }
 
-/* Additional mobile optimizations */
 @media (max-width: 640px) {
     .testimonial-grid {
         grid-template-columns: repeat(2, minmax(160px, 1fr));
@@ -465,48 +505,145 @@
     }
     
     .testimonial-card {
-        min-height: 260px;
+        height: 120px;
+        min-height: 120px;
+        max-height: 120px;
     }
     
     .testimonial-heading {
         font-size: 1.3rem;
     }
+
+    /* Team tab content */
+    .name-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .name-grid span {
+        font-size: 0.9rem;
+    }
+
+    .team-heads .members span {
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 480px) {
     .testimonial-grid {
-        grid-template-columns: repeat(2, minmax(140px, 1fr));
-        gap: 0.75rem;
+        grid-template-columns: repeat(2, 80px);
+        column-gap: 1rem;
+        row-gap: 1rem;
     }
     
     .section-title{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     
     .testimonial-card {
-        min-height: 240px;
-        padding: 0.75rem;
+        padding: 0.5rem;
+        width: 80px;
+        height: 100px;
+        min-width: 80px;
+        min-height: 100px;
+        max-width: 80px;
+        max-height: 100px;
+        gap: 0.25rem;
     }
     
     .testimonial-avatar img {
-        height: 3rem;
+        height: 1.5rem;
+        width: 1.5rem;
     }
     
     .testimonial-heading {
-        font-size: 1.2rem;
-        margin-top: 1rem;
+        font-size: 0.7rem;
+        margin-top: 0.25rem;
+        margin-bottom: 0.1rem;
     }
     
     .testimonial-text {
-        font-size: 0.7rem;
+        font-size: 0.5rem;
+        line-height: 1.1;
     }
     
     .testimonial-details h3 {
-        font-size: 0.9rem;
+        font-size: 0.4rem;
     }
     
     .testimonial-details p {
-        font-size: 0.75rem;
+        font-size: 0.35rem;
+    }
+
+    /* Add styles for team tab content */
+    .member-list-container {
+        padding: 0.25rem;
+        margin-top: 1rem;
+    }
+
+    .department {
+        padding: 0.75rem;
+        margin: 0.5rem 0.1rem;
+        border-radius: 8px;
+    }
+
+    .department h3 {
+        font-size: 0.8rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .department p {
+        font-size: 0.6rem;
+        margin: 0.2rem 0;
+    }
+
+    .name-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+
+    .name-grid span {
+        font-size: 0.6rem;
+        padding: 0.2rem 0.4rem;
+    }
+
+    /* Team heads styles */
+    .team-heads .label {
+        font-size: 0.7rem;
+    }
+
+    .team-heads .members {
+        gap: 0.5rem;
+    }
+
+    .team-heads .members span {
+        font-size: 0.6rem;
+        padding: 0.2rem 0.4rem;
+    }
+
+    .team-heads .special-name {
+        font-size: 0.6rem;
+    }
+
+    /* Search container styles for mobile */
+    .search-container {
+        display: none; /* Hidden by default */
+        max-width: 100%;
+        margin: 1rem 0.5rem;
+    }
+
+    .tab-content.active .search-container {
+        display: block; /* Show only when tab is active */
+    }
+
+    .search-input {
+        height: 48px;
+        font-size: 1.125rem;
+        padding: 0 48px 0 16px;
+    }
+
+    .search-button {
+        height: 48px;
+        width: 48px;
     }
 }
 
@@ -518,7 +655,9 @@
     }
     
     .testimonial-card {
-        min-height: 250px;
+        height: 120px;
+        min-height: 120px;
+        max-height: 120px;
     }
 }
 
@@ -530,7 +669,9 @@
     }
     
     .testimonial-card {
-        min-height: 270px;
+        height: 120px;
+        min-height: 120px;
+        max-height: 120px;
     }
 }
 
@@ -571,7 +712,13 @@
     .testimonial-grid {
         grid-template-columns: repeat(2, 1fr);
         padding: 1.5rem;
-        gap: 4rem;
+        row-gap: 2rem;
+        column-gap: 2rem;
+    }
+    .testimonial-card {
+        height: 120px;
+        min-height: 120px;
+        max-height: 120px;
     }
 }
 
@@ -601,10 +748,26 @@
 
 /* Search Container Styles */
 .search-container {
+    display: none; /* Hidden by default */
     position: relative;
+    margin-bottom: 2rem;
     width: 100%;
-    max-width: 400px;
-    margin: 1.5rem auto;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+/* Show search container when team tab is active */
+#execoms .search-container {
+    display: block;
+}
+
+/* Remove conflicting rules */
+.tab-content.active .search-container {
+    display: none;
+}
+
+.search-container[style*="display: block"] {
+    display: block;
 }
 
 .search-container::before {
@@ -621,10 +784,13 @@
         transparent 100%
     );
     background-size: 200% 200%;
-    -webkit-mask:
+    -webkit-mask: 
         linear-gradient(#fff 0 0) content-box, 
         linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
+    mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
     mask-composite: exclude;
     animation: flowingBorder 3s linear infinite;
 }
@@ -693,6 +859,7 @@
     animation: spin 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
+/* Search suggestions styles */
 .search-suggestions {
     position: absolute;
     top: 100%;
