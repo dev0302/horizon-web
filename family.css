@@ -20,7 +20,6 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: pulse 2s infinite;
   position: relative;
   letter-spacing: 0.35rem;
 }
