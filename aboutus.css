@@ -61,6 +61,69 @@
     width: 100%;
     
   }
+
+   /* Small Mobile Devices */
+   @media (max-width: 480px) {
+    .main-section {
+      padding: 0 1rem;
+      justify-content: center;
+      align-items: center;
+      max-width: 90%;
+    }
+    .section-description{
+      color: #f5f5f5d8;
+      font-size:1.1rem ;
+      max-width: 100%;
+    }
+    
+    .content-left {
+      margin-top: 1.5rem;
+    }
+    
+    .image-container {
+      height: 40vh;
+      margin-top: 1.5rem;
+    }
+    
+    #about_us_para {
+      font-size: 1.4rem;
+    }
+    
+    .section-description {
+      font-size: 0.75rem;
+      text-align: left;
+    }
+  }
+
+  /* Portrait Orientation Specific */
+  @media (orientation: portrait) {
+    .main-section {
+      padding: 0 1.5rem;
+    }
+    
+    .image-container {
+      height: 26vh;
+      width: 75vw;
+    }
+  }
+
+  /* Landscape Orientation Specific */
+  @media (orientation: landscape) {
+    .main-section {
+      padding: 0 2rem;
+    }
+    
+    .image-container {
+      height: 70vh;
+    }
+  }
+
+
+
+
+
+
+
   
   @media screen and (min-width:860px) {
     .header_content{
@@ -212,51 +275,7 @@
     }
   }
 
-  /* Small Mobile Devices */
-  @media (max-width: 480px) {
-    .main-section {
-      padding: 0 1rem;
-    }
-    
-    .content-left {
-      margin-top: 1.5rem;
-    }
-    
-    .image-container {
-      height: 40vh;
-      margin-top: 1.5rem;
-    }
-    
-    #about_us_para {
-      font-size: 1.4rem;
-    }
-    
-    .section-description {
-      font-size: 0.9rem;
-    }
-  }
-
-  /* Portrait Orientation Specific */
-  @media (orientation: portrait) {
-    .main-section {
-      padding: 0 1.5rem;
-    }
-    
-    .image-container {
-      height: 50vh;
-    }
-  }
-
-  /* Landscape Orientation Specific */
-  @media (orientation: landscape) {
-    .main-section {
-      padding: 0 2rem;
-    }
-    
-    .image-container {
-      height: 70vh;
-    }
-  }
+ 
 
   /* High DPI Screens */
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {

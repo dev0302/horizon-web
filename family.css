@@ -479,6 +479,10 @@
         gap: 0.75rem;
     }
     
+    .section-title{
+        font-size: 1.2rem;
+    }
+    
     .testimonial-card {
         min-height: 240px;
         padding: 0.75rem;
@@ -617,7 +621,7 @@
         transparent 100%
     );
     background-size: 200% 200%;
-    -webkit-mask: 
+    -webkit-mask:
         linear-gradient(#fff 0 0) content-box, 
         linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;

@@ -358,6 +358,68 @@
 }
 
 /* Responsive grid adjustment with optimized performance */
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  .event-timeline-images-wrapper {
+    max-width: 100%;
+    padding: 1rem;
+    margin-top: 3rem;
+  }
+
+  .event-timeline-item {
+    position: relative;
+    display: flex;
+    gap: 0.1rem;
+    margin-bottom: 2.5rem;
+    opacity: 1;
+    transform: none;
+    margin-right: 0.5rem;
+  }
+  .event-timeline-badge{
+    font-size: 0.7rem;
+  }
+  .event-timeline-title{
+    font-size: 1rem;
+  }
+  .event-timeline-description{
+    font-size: 0.6rem;
+  }
+  
+  .event-section-title {
+    font-size: 1.2rem;
+    padding-top: 2rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .event-timeline-images {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.2rem;
+  }
+  
+  .event-timeline-images img {
+    width: 120px;
+    max-height: 120px;
+  }
+  
+  .event-timeline {
+    max-width: 100%;
+    padding-left: 1.25rem;
+  }
+  
+  #event-section {
+    padding-bottom: 3rem;
+  }
+
+  .event-timeline-dot {
+    width: 1rem;
+    height: 1rem;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    margin-top: 8rem;
+    margin-right: -0.2rem;
+  }
+  
+}
+
 @media (max-width: 1024px) {
   .event-timeline-images {
       grid-template-columns: repeat(2, minmax(200px, 1fr));
@@ -462,38 +524,7 @@
   }
 }
 
-/* Small Mobile Devices */
-@media (max-width: 480px) {
-  .event-timeline-images-wrapper {
-    max-width: 100%;
-    padding: 1rem;
-    margin-top: 3rem;
-  }
-  
-  .event-timeline-images {
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
-  }
-  
-  .event-section-title {
-    font-size: 1.75rem;
-    padding-top: 2.5rem;
-    letter-spacing: 0.2rem;
-  }
-  
-  .event-timeline-images img {
-    height: 180px;
-  }
-  
-  .event-timeline {
-    max-width: 100%;
-    padding-left: 1.25rem;
-  }
-  
-  #event-section {
-    padding-bottom: 3rem;
-  }
-}
+
 
 /* Portrait Orientation Specific */
 @media (orientation: portrait) {
@@ -506,7 +537,7 @@
   }
   
   .event-timeline {
-    max-width: 95%;
+    max-width: 100%;
   }
 }
 
