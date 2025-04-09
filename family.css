@@ -51,6 +51,7 @@
     margin-top: 2.5rem;
 }
 
+
 .testimonial-grid {
     display: grid;
     row-gap: 3.8rem;
@@ -533,6 +534,7 @@
         grid-template-columns: repeat(2, 80px);
         column-gap: 1rem;
         row-gap: 1rem;
+        margin-top: -0.35rem;
     }
     
     .section-title{
@@ -540,10 +542,10 @@
     }
     
     .testimonial-card {
-        padding: 0.5rem;
-        width: 80px;
+        padding: 0.2rem;
+        width: 100px;
         height: 100px;
-        min-width: 80px;
+        min-width: 100px;
         min-height: 100px;
         max-width: 80px;
         max-height: 100px;
@@ -551,28 +553,35 @@
     }
     
     .testimonial-avatar img {
-        height: 1.5rem;
-        width: 1.5rem;
+        height: 1.8rem;
+        width: 1.8rem;
     }
     
     .testimonial-heading {
-        font-size: 0.7rem;
-        margin-top: 0.25rem;
-        margin-bottom: 0.1rem;
+        font-size: 0.8rem;
+        margin-top: 0.15rem;
+        margin-bottom: 0.05rem;
     }
     
     .testimonial-text {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
         line-height: 1.1;
     }
     
     .testimonial-details h3 {
-        font-size: 0.4rem;
+        font-size: 0.5rem;
     }
     
     .testimonial-details p {
-        font-size: 0.35rem;
+        font-size: 0.45rem;
     }
+
+    .card.scroll-reveal{
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+    }
+
+
 
     /* Add styles for team tab content */
     .member-list-container {
@@ -645,6 +654,7 @@
         height: 48px;
         width: 48px;
     }
+    
 }
 
 /* Portrait Orientation Specific */

@@ -49,7 +49,7 @@
   }
   
   .wide-testimonial-card.dark-theme .wide-image {
-    flex: 1 1 30%;
+    /* flex: 1 1 30%; */
     text-align: right;
   }
   
