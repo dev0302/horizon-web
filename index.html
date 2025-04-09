@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="landingpage2.css">
   <link rel="stylesheet" href="aboutus.css">
   <link rel="stylesheet" href="animations.css">
+  <link rel="stylesheet" href="upcomingevent.css">
   
   <!-- External Libraries -->
   <!-- Feather Icons -->
@@ -268,8 +269,8 @@
                     <div class="team-heads">
                       <span class="label">Heads:</span>
                       <span class="members">
-                        <span class="special-name">Tanishq Gaur</span>
-                        <span class="special-name">Arti Joshi</span>
+                        <span>Tanishq Gaur</span>
+                        <span>Arti Joshi</span>
                       </span>
                     </div>
                     <div class="team-executives">
@@ -524,107 +525,201 @@
         </div>
       </section>
 
-      <!-- Events Section -->
-      <section id="event-section" class="Eventsection event-section section-fade-in">
-        <div class="event-container">
-          <div class="event-section-header">
-            <h2 class="event-section-title text-fade-in">OUR EVENTS</h2>
+      <!-- Upcoming Event Section -->
+      <section id="upcoming-event-section">
+        <!-- Animated Background Elements -->
+        <div class="upcoming-event-background">
+          <!-- SVG Curved Lines -->
+          <svg class="upcoming-event-svg-container" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="upcoming-grad1" x1="1" y1="0" x2="0" y2="0">
+                <stop offset="0%" stop-color="#22d3ee" stop-opacity="0" />
+                <stop offset="50%" stop-color="#22d3ee" stop-opacity="0.5" />
+                <stop offset="100%" stop-color="#22d3ee" stop-opacity="0" />
+              </linearGradient>
+              <linearGradient id="upcoming-grad2" x1="1" y1="0" x2="0" y2="0">
+                <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0" />
+                <stop offset="50%" stop-color="#8b5cf6" stop-opacity="0.5" />
+                <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+            <path id="upcoming-path1" class="upcoming-svg-path upcoming-path-cyan" d="M 100 100 Q 300 0 500 100 T 900 100" />
+            <path id="upcoming-path2" class="upcoming-svg-path upcoming-path-violet" d="M 0 200 Q 200 100 400 200 T 800 200" />
+            <path id="upcoming-path3" class="upcoming-svg-path upcoming-path-cyan" d="M 100 600 Q 300 500 500 600 T 900 600" />
+          </svg>
+
+          <!-- Straight Lines -->
+          <div class="upcoming-event-lines-container">
+            <div class="upcoming-event-animated-line upcoming-event-line-cyan" style="top: 15%"></div>
+            <div class="upcoming-event-animated-line upcoming-event-line-violet" style="top: 25%"></div>
+            <div class="upcoming-event-animated-line upcoming-event-line-cyan" style="top: 35%"></div>
           </div>
 
-          <div class="event-timeline">
-            <!-- Tech Talks Event -->
-            <div class="event-timeline-item card-fade-in">
-              <div class="event-timeline-marker">
-                <div class="event-timeline-dot"></div>
+          <!-- Glowing Orbs -->
+          <div class="upcoming-event-orb upcoming-event-orb-cyan"></div>
+          <div class="upcoming-event-orb upcoming-event-orb-violet"></div>
+        </div>
+
+        <!-- Latest Events Section -->
+      <div class="latest-events-container">
+        <div class="latest-events-header">
+          <h3 class="latest-events-title">UPCOMING EVENT</h3>
+        </div>
+
+        <div class="latest-events-slider">
+          <!-- Single Event Card -->
+          <div class="event-card active">
+            <div class="event-card-content">
+              <div class="event-date">
+                <span class="day"><i data-feather="calendar"></i> Reveal</span>
+                <span class="month">Soon</span>
               </div>
-              <div class="event-timeline-card">
-                <div class="event-timeline-badge">2025</div>
-                <h3 class="event-timeline-title">Tech Talks</h3>
-                <p class="event-timeline-description">
-                  The "Tech talk" Event happened at the BVCOE Library.
-                </p>
-                <div class="event-timeline-images-wrapper">
-                  <div class="event-timeline-images">
-                    <img src="tech_talk_images/libpic1.jpg" alt="Tech Talk 1" class="image-fade-in">
-                    <img src="tech_talk_images/libpic2.jpg" alt="Tech Talk 2" class="image-fade-in">
-                    <img src="tech_talk_images/libpic3.jpg" alt="Tech Talk 1" class="image-fade-in">
-                    <img src="tech_talk_images/libpic4.jpg" alt="Tech Talk 2" class="image-fade-in">
-                    <img src="tech_talk_images/libpic5.jpg" alt="Tech Talk 1" class="image-fade-in">
-                    <img src="tech_talk_images/grouppic.jpg" alt="Tech Talk 2" class="image-fade-in">
-                  </div>
+              <div class="event-info">
+                <h4 class="event-name">BVCOE MUN</h4>
+                <p class="event-description">Join us for an exciting Model United Nations conference where delegates will debate, discuss, and deliberate on pressing global issues.</p>
+                <div class="event-details">
+                  <span class="event-time"><i data-feather="clock"></i> Reveal Soon</span>
+                  <span class="event-location"><i data-feather="map-pin"></i> BVCOE Campus</span>
+                  <span class="event-prize"><i data-feather="award"></i> Prize Pool: ₹70,000</span>
                 </div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQPYk6z-Lnmm8dtobj--T9cnlo9nmMyfNAR-gb5vrYJUc89Q/closedform" class="event-link" target="_blank">Register Now <i data-feather="arrow-right"></i></a>
               </div>
             </div>
+            <div class="event-image">
+              <img src="./bvcoe_mun.jpg" alt="BVCOE MUN">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <!-- Vimarsh Event -->
-            <div class="event-timeline-item card-fade-in">
-              <div class="event-timeline-marker">
-                <div class="event-timeline-dot"></div>
-              </div>
-              <div class="event-timeline-card">
-                <div class="event-timeline-badge">2025</div>
-                <h3 class="event-timeline-title">Vimarsh</h3>
-                <p class="event-timeline-description">
-                  Online debate conducted by horizon, on the topic: "one nation one election".
-                </p>
-                <div class="event-timeline-images-wrapper">
-                  <div class="event-timeline-images">
-                    <img src="vimarsh_images/1.jpg" alt="Vimarsh 1" class="image-fade-in">
-                    <img src="vimarsh_images/2.jpg" alt="Vimarsh 2" class="image-fade-in">
-                    <img src="vimarsh_images/3.jpg" alt="Vimarsh 1" class="image-fade-in">
-                    <img src="vimarsh_images/4.jpg" alt="Vimarsh 2" class="image-fade-in">
-                    <img src="vimarsh_images/5.jpg" alt="Vimarsh 1" class="image-fade-in">
-                    <img src="vimarsh_images/6.jpg" alt="Vimarsh 2" class="image-fade-in">
-                  </div>
-                </div>
+    <!-- Event Section -->
+    <section id="event-section">
+      <!-- Animated Background Elements -->
+      <div class="event-background">
+        <!-- SVG Curved Lines -->
+        <svg class="event-svg-container" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="event-grad1" x1="1" y1="0" x2="0" y2="0">
+              <stop offset="0%" stop-color="#22d3ee" stop-opacity="0" />
+              <stop offset="50%" stop-color="#22d3ee" stop-opacity="0.5" />
+              <stop offset="100%" stop-color="#22d3ee" stop-opacity="0" />
+            </linearGradient>
+            <linearGradient id="event-grad2" x1="1" y1="0" x2="0" y2="0">
+              <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0" />
+              <stop offset="50%" stop-color="#8b5cf6" stop-opacity="0.5" />
+              <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0" />
+            </linearGradient>
+          </defs>
+          <path id="event-path1" class="event-svg-path event-path-cyan" d="M 100 100 Q 300 0 500 100 T 900 100" />
+          <path id="event-path2" class="event-svg-path event-path-violet" d="M 0 200 Q 200 100 400 200 T 800 200" />
+          <path id="event-path3" class="event-svg-path event-path-cyan" d="M 100 600 Q 300 500 500 600 T 900 600" />
+        </svg>
+
+        <!-- Straight Lines -->
+        <div class="event-lines-container">
+          <div class="event-animated-line event-line-cyan" style="top: 15%"></div>
+          <div class="event-animated-line event-line-violet" style="top: 25%"></div>
+          <div class="event-animated-line event-line-cyan" style="top: 35%"></div>
+        </div>
+
+        <!-- Glowing Orbs -->
+        <div class="event-orb event-orb-cyan"></div>
+        <div class="event-orb event-orb-violet"></div>
+      </div>
+
+      <h2 class="event-section-title">OUR EVENTS</h2>
+      <div class="event-timeline">
+        <!-- Tech Talks Event -->
+        <div class="event-timeline-item card-fade-in">
+          <div class="event-timeline-marker">
+            <div class="event-timeline-dot"></div>
+          </div>
+          <div class="event-timeline-card">
+            <div class="event-timeline-badge">2025</div>
+            <h3 class="event-timeline-title">Tech Talks</h3>
+            <p class="event-timeline-description">
+              The "Tech talk" Event happened at the BVCOE Library.
+            </p>
+            <div class="event-timeline-images-wrapper">
+              <div class="event-timeline-images">
+                <img src="tech_talk_images/libpic1.jpg" alt="Tech Talk 1" class="image-fade-in">
+                <img src="tech_talk_images/libpic2.jpg" alt="Tech Talk 2" class="image-fade-in">
+                <img src="tech_talk_images/libpic3.jpg" alt="Tech Talk 1" class="image-fade-in">
+                <img src="tech_talk_images/libpic4.jpg" alt="Tech Talk 2" class="image-fade-in">
+                <img src="tech_talk_images/libpic5.jpg" alt="Tech Talk 1" class="image-fade-in">
+                <img src="tech_talk_images/grouppic.jpg" alt="Tech Talk 2" class="image-fade-in">
               </div>
             </div>
           </div>
         </div>
-      </section>
 
-      <!-- Footer Section -->
-      <section id="contact-section">
-        <footer class="custom-footer">
-          <div class="container">
-            <div class="footer-wrapper">
-              <div class="footer-brand">
-                <img id="horizon_logo2" src="horizon_logo2.jpg" alt="Horizon Logo">
-                <h2 class="footer-title">Horizon Society</h2>
-                <p class="footer-subtitle">Igniting Innovation. Inspiring Change.</p>
+        <!-- Vimarsh Event -->
+        <div class="event-timeline-item card-fade-in">
+          <div class="event-timeline-marker">
+            <div class="event-timeline-dot"></div>
+          </div>
+          <div class="event-timeline-card">
+            <div class="event-timeline-badge">2025</div>
+            <h3 class="event-timeline-title">Vimarsh</h3>
+            <p class="event-timeline-description">
+              Online debate conducted by horizon, on the topic: "one nation one election".
+            </p>
+            <div class="event-timeline-images-wrapper">
+              <div class="event-timeline-images">
+                <img src="vimarsh_images/1.jpg" alt="Vimarsh 1" class="image-fade-in">
+                <img src="vimarsh_images/2.jpg" alt="Vimarsh 2" class="image-fade-in">
+                <img src="vimarsh_images/3.jpg" alt="Vimarsh 1" class="image-fade-in">
+                <img src="vimarsh_images/4.jpg" alt="Vimarsh 2" class="image-fade-in">
+                <img src="vimarsh_images/5.jpg" alt="Vimarsh 1" class="image-fade-in">
+                <img src="vimarsh_images/6.jpg" alt="Vimarsh 2" class="image-fade-in">
               </div>
-        
-              <div class="footer-contact">
-                <h3>Contact Us</h3>
-                <p><i data-feather="mail" class="footer-small-icon"></i> drkaushal25@gmail.com</p>
-                <p><i data-feather="instagram" class="footer-small-icon"></i> 
-                  <a href="https://www.instagram.com/horizonbvp/?hl=en" target="_blank">@horizonbvp</a>
-                </p>
-                <p><i data-feather="instagram" class="footer-small-icon"></i> 
-                  <a href="https://www.instagram.com/bvcoe_mun?igsh=MXhkaDRmNmg3ZnZkcA==" target="_blank">@bvcoe_mun</a>
-                </p>
-                <p><i data-feather="linkedin" class="footer-small-icon"></i> 
-                  <a href="https://www.linkedin.com/search/results/all/?heroEntityKey=urn%3Ali%3Aorganization%3A88400039&keywords=HORIZON_BVP&origin=ENTITY_SEARCH_HOME_HISTORY&sid=A51" target="_blank">linkedin.com/company/horizonbvcoe</a>
-                </p>
-              </div>
-            </div>
-        
-            <div class="footer-bottom">
-              <p>&copy; 2025 Horizon BVCOE. All rights reserved.</p>
-              <p class="developer-credit">Developed by - <a href="https://www.linkedin.com/in/dev-malik-976230311/" target="_blank">Dev</a></p>
             </div>
           </div>
-        </footer>
-      </main>
-    </div>
-  </section>
+        </div>
+      </div>
+    </section>
 
-  
+    <!-- Footer Section -->
+    <section id="contact-section">
+      <footer class="custom-footer">
+        <div class="container">
+          <div class="footer-wrapper">
+            <div class="footer-brand">
+              <img id="horizon_logo2" src="horizon_logo2.jpg" alt="Horizon Logo">
+              <h2 class="footer-title">Horizon Society</h2>
+              <p class="footer-subtitle">Igniting Innovation. Inspiring Change.</p>
+            </div>
+      
+            <div class="footer-contact">
+              <h3>Contact Us</h3>
+              <p><i data-feather="mail" class="footer-small-icon"></i> drkaushal25@gmail.com</p>
+              <p><i data-feather="instagram" class="footer-small-icon"></i> 
+                <a href="https://www.instagram.com/horizonbvp/?hl=en" target="_blank">@horizonbvp</a>
+              </p>
+              <p><i data-feather="instagram" class="footer-small-icon"></i> 
+                <a href="https://www.instagram.com/bvcoe_mun?igsh=MXhkaDRmNmg3ZnZkcA==" target="_blank">@bvcoe_mun</a>
+              </p>
+              <p><i data-feather="linkedin" class="footer-small-icon"></i> 
+                <a href="https://www.linkedin.com/search/results/all/?heroEntityKey=urn%3Ali%3Aorganization%3A88400039&keywords=HORIZON_BVP&origin=ENTITY_SEARCH_HOME_HISTORY&sid=A51" target="_blank">linkedin.com/company/horizonbvcoe</a>
+              </p>
+            </div>
+          </div>
+      
+          <div class="footer-bottom">
+            <p>&copy; 2025 Horizon BVCOE. All rights reserved.</p>
+            <p class="developer-credit">Developed by - <a href="https://www.linkedin.com/in/dev-malik-976230311/" target="_blank">Dev</a></p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </div>
 
   <!-- JavaScript Files -->
   <script src="navigation.js"></script>
   <script src="animations.js"></script>
   <script src="tabs.js"></script>
+  <script src="js/typing.js"></script>
   <script src="landingpage.js"></script>
   <script src="scroll-animations.js"></script>
 

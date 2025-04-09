@@ -253,52 +253,13 @@
     gap: 0.5rem;
 }
 
-.team-heads {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    align-items: flex-start;
-    margin-bottom: 1.5rem;
-}
 
 .label {
     font-weight: 600;
     color: var(--label-color);
-    font-size: 0.9rem;
+    font-size: .9rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-}
-
-.team-heads .members {
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-
-.team-heads .members span {
-    font-size: 0.95rem;
-    color: var(--text-primary);
-    transition: all 0.2s ease;
-    text-align: left;
-}
-
-.team-heads .members span:hover {
-    color: #a5b4fc;
-    transform: translateX(3px);
-}
-
-/* Special styling for specific names */
-.team-heads .special-name {
-    color: #38bdf8;
-    text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
-    animation: glow 2s ease-in-out infinite alternate;
-    transition: all 0.2s ease;
-}
-
-.team-heads .special-name:hover {
-    color: #0ea5e9;
-    transform: translateX(3px);
 }
 
 @keyframes glow {
@@ -311,23 +272,24 @@
 }
 
 .members {
-    font-weight: 500;
-    color: var(--text-secondary);
-    font-size: 1rem;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 0.75rem 1rem;
-    border-radius: 6px;
-    transition: all 0.2s ease;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
 
-.members:hover {
-    background: rgba(79, 70, 229, 0.2);
-    color: #a5b4fc;
-    transform: translateX(3px);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+.members span {
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+}
+.members span:hover {
+    color: var(--primary-color);
+    transform: translateY(-2px);
 }
 
 .name-grid {
@@ -346,12 +308,12 @@
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
 }
-
 .name-grid span:hover {
     color: var(--primary-color);
     transform: translateY(-2px);
 }
 
+.members span.member-highlight,
 .name-grid span.member-highlight {
     background-color: var(--primary-color);
     color: var(--background-color);
@@ -690,7 +652,9 @@
     .name-grid span {
         background: rgba(255, 255, 255, 0.07);
     }
-    
+    .members span {
+        background: rgba(255, 255, 255, 0.03);
+    }
     .department {
         border: 1.5px solid rgba(255, 255, 255, 0.1);
     }
@@ -703,6 +667,9 @@
     }
     
     .name-grid span {
+        background: rgba(255, 255, 255, 0.03);
+    }
+    .members span {
         background: rgba(255, 255, 255, 0.03);
     }
 }
