@@ -21,13 +21,13 @@
     flex-direction: column;
     gap:1.4rem;
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateY(100px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
   }
   
   .content-left.scroll-reveal {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
   
   #about_us_para{

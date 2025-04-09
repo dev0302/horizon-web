@@ -6,6 +6,13 @@
 function initTeamTabs() {
     const tabButtons = document.querySelectorAll('.tab-btn');
     const tabContents = document.querySelectorAll('.tab-content');
+    const searchContainers = document.querySelectorAll('.search-container');
+  
+    // Hide search container in core team tab by default
+    const coreTeamSearch = document.querySelector('#core-team .search-container');
+    if (coreTeamSearch) {
+        coreTeamSearch.style.display = 'none';
+    }
   
     tabButtons.forEach(button => {
       button.addEventListener('click', () => {
@@ -19,10 +26,13 @@ function initTeamTabs() {
         const activeContent = document.getElementById(tabId);
         activeContent.classList.add('active');
 
-        // Show search container for both tabs
-        const searchContainers = document.querySelectorAll('.search-container');
+        // Show/hide search container based on tab
         searchContainers.forEach(container => {
-            container.style.display = 'block';
+            if (tabId === 'execoms') {
+                container.style.display = 'block';
+            } else {
+                container.style.display = 'none';
+            }
         });
 
         // Clear search when switching tabs
