@@ -16,7 +16,9 @@
   }
   
   .latest-events-title {
-    font-size: 1.5rem;
+    letter-spacing: 0.15rem;
+    margin: 0 auto;
+    font-size: 1.8rem;
     font-weight: 700;
     color: white;
     position: relative;
@@ -68,10 +70,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 60px;
+    /* width: 60px; */
     height: 60px;
-    background: linear-gradient(135deg, #22d3ee, #8b5cf6);
+    background: linear-gradient(135deg, #d6d9de1b, #c0b2e357);
     border-radius: 15px;
     color: white;
     font-weight: 700;
