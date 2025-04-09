@@ -397,8 +397,8 @@
   }
   
   .event-timeline-images img {
-    width: 120px;
-    max-height: 120px;
+    width: 80%px;
+    max-height: 80px;
   }
   
   .event-timeline {
