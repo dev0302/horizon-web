@@ -665,6 +665,8 @@
   z-index: 1;
   margin-bottom: 0;
   isolation: isolate;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 .upcoming-event-background {
@@ -673,6 +675,8 @@
   overflow: hidden;
   z-index: -1;
   pointer-events: none;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 .upcoming-event-container {
@@ -681,6 +685,8 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem 1.5rem 1rem;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 .upcoming-event-title {
@@ -696,6 +702,7 @@
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: transform, opacity;
 }
 
 .upcoming-event-title::after {
@@ -728,6 +735,7 @@
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: transform, opacity;
 }
 
 .upcoming-event-card.visible {
@@ -742,6 +750,7 @@
   opacity: 0;
   animation: pulse 6s infinite;
   pointer-events: none;
+  will-change: transform, opacity;
 }
 
 .upcoming-event-lines-container {
@@ -757,6 +766,7 @@
   opacity: 0;
   animation: slideIn 4s infinite;
   pointer-events: none;
+  will-change: transform, opacity;
 }
 
 .upcoming-event-line-cyan {
@@ -1020,6 +1030,53 @@
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+/* Optimize animations for mobile */
+@media (max-width: 480px) {
+  .upcoming-event-title {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    transition: none;
+  }
+
+  .upcoming-event-card {
+    transition: none;
+    backdrop-filter: none;
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .upcoming-event-orb {
+    display: none;
+  }
+
+  .upcoming-event-line {
+    display: none;
+  }
+
+  .event-link {
+    animation: none;
+    transform: none;
+  }
+
+  .event-link::before {
+    display: none;
+  }
+
+  .event-link i {
+    animation: none;
+  }
+}
+
+/* Reduce motion for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .upcoming-event-title,
+  .upcoming-event-card,
+  .event-link,
+  .event-link i {
+    animation: none !important;
+    transition: none !important;
   }
 }
 

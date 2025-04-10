@@ -141,7 +141,7 @@
                 </p>
             </div>
 
-            <div class="content-right" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+            <div class="content-right" data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-out">
                 <div class="image-container">
                     <img src="tech_talk_images/grouppic.jpg" class="section-image" alt="Horizon Group Photo">
                 </div>
@@ -746,10 +746,16 @@
     // Initialize AOS (Animate On Scroll)
     document.addEventListener('DOMContentLoaded', function() {
         AOS.init({
-            duration: 800,        // Animation duration
+            duration: 800,        // Restored original duration
             once: true,           // Whether animation should happen only once
-            offset: 120,          // Offset (in px) from the original trigger point
-            easing: 'ease-in-out' // Animation easing
+            offset: 50,           // Reduced from 120 to 50 to trigger animations earlier
+            easing: 'ease-in-out' // Restored original easing
+        });
+
+        // Add specific settings for about us section
+        const aboutElements = document.querySelectorAll('#about-us [data-aos]');
+        aboutElements.forEach(element => {
+            element.setAttribute('data-aos-offset', '30');  // Even earlier trigger for about section
         });
     });
   </script>
