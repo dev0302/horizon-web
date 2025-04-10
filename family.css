@@ -73,7 +73,11 @@
     background-image: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
     box-shadow: rgba(188, 181, 181, 0.26) 0px 4px 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+
     max-width: 510px;
+
+    /* ✨ Glowing rotation animation */
+    animation: glowRotate 6s linear infinite;
 }
 
 .testimonial-card:hover {
@@ -105,6 +109,7 @@
   position: relative;
   letter-spacing: 0.25rem;
 }
+
 
 .testimonial-text {
     font-size: 0.82rem;
@@ -881,27 +886,10 @@
     transition-property: transform, opacity;
 }
 
-/* Fix for tab content transitions */
-.tab-content {
-    transition: opacity 0.3s ease;
-}
 
-/* Ensure images load properly with animations */
-.testimonial-avatar img {
-    transition: transform 0.5s ease;
-}
 
-.testimonial-card:hover .testimonial-avatar img {
-    transform: scale(1.05);
-}
 
-/* Department animations */
-.department {
-    transition: all 0.5s ease;
-}
 
-.department:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
+
+
   

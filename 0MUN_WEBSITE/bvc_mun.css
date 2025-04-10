@@ -139,6 +139,8 @@ body {
     opacity: 0;
     transform: translateY(50px);
     animation: fadeInUp 0.8s forwards;
+    letter-spacing: 0.5rem;
+
 }
 
 @keyframes fadeInUp {
