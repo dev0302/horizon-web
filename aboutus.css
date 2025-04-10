@@ -21,14 +21,14 @@
     flex-direction: column;
     gap:1.4rem;
     opacity: 0;
-    transform: translateY(100px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    /* transform: translateY(100px); */
+    /* transition: opacity 0.8s ease-out, transform 0.8s ease-out; */
   }
   
-  .content-left.scroll-reveal {
+  /* .content-left.scroll-reveal {
     opacity: 1;
     transform: translateY(0);
-  }
+  } */
   
   #about_us_para{
     font-size: 2.15rem;
@@ -151,8 +151,8 @@
   /* Initial state before scroll */
   .scroll-hidden {
     opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.8s ease-out;
+    /* transform: translateY(30px); */
+    /* transition: all 0.8s ease-out; */
   }
   
   /* Reveal with animation */
@@ -309,4 +309,3 @@
       transform: none;
     }
   }
-  

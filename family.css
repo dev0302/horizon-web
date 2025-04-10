@@ -875,4 +875,33 @@
     background: rgba(56, 189, 248, 0.3);
     opacity: 1;
 }
+
+/* Smooth transitions for all AOS elements */
+[data-aos] {
+    transition-property: transform, opacity;
+}
+
+/* Fix for tab content transitions */
+.tab-content {
+    transition: opacity 0.3s ease;
+}
+
+/* Ensure images load properly with animations */
+.testimonial-avatar img {
+    transition: transform 0.5s ease;
+}
+
+.testimonial-card:hover .testimonial-avatar img {
+    transform: scale(1.05);
+}
+
+/* Department animations */
+.department {
+    transition: all 0.5s ease;
+}
+
+.department:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
   
