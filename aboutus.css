@@ -45,10 +45,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    will-change: transform;
+    /* will-change: transform;
     transform: translateZ(0);
     backface-visibility: hidden;
-    perspective: 1000;
+    perspective: 1000; */
   }
   .image-container {
     margin-top: 3.2rem;
@@ -58,10 +58,10 @@
     border-radius: 25px;
     height: 57vh;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    will-change: transform;
+    /* will-change: transform;
     transform: translateZ(0);
     backface-visibility: hidden;
-    perspective: 1000;
+    perspective: 1000; */
   }
   .section-image {
     height: 100%;
@@ -70,10 +70,10 @@
     border-radius: 25px;
     transition: transform 0.6s ease, filter 0.6s ease;
     filter: grayscale(0.1) brightness(0.95);
-    will-change: transform, filter;
+    /* will-change: transform, filter;
     transform: translateZ(0);
     backface-visibility: hidden;
-    perspective: 1000;
+    perspective: 1000; */
   }
 
    /* Small Mobile Devices */
@@ -185,12 +185,12 @@
   /* Reveal with animation */
   .scroll-reveal-left {
     opacity: 1;
-    transform: translateX(0);
+    /* transform: translateX(0); */
   }
   
   .scroll-reveal-zoom {
     opacity: 1;
-    transform: scale(1);
+    /* transform: scale(1); */
   }
   
   /* Specific for text sliding in from left */
