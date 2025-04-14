@@ -139,15 +139,69 @@
   color: #8b5cf6;
 }
 
+/* Enhanced Event Link Arrow Animation */
 .event-link {
+  position: relative;
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  color: #22d3ee;
-  text-decoration: none;
-  font-weight: 600;
+  gap: 8px;
   transition: all 0.3s ease;
-  margin-top: auto;
+}
+
+.event-link i {
+  display: inline-block;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.event-link:hover i {
+  animation: arrowBounce 0.6s infinite alternate;
+}
+
+@keyframes arrowBounce {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateX(5px) rotate(5deg);
+  }
+  100% {
+    transform: translateX(10px) rotate(10deg);
+  }
+}
+
+.event-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #4a6bff, #3a5bef);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.event-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Add shine effect */
+.event-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.7s ease;
+}
+
+.event-link:hover::before {
+  left: 100%;
 }
 
 .event-link:hover {

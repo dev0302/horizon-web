@@ -193,3 +193,63 @@ function initTeamTabs() {
     initEventAnimations();
     initTeamSearch();
   });
+
+// Tab switching functionality
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all tab buttons and content
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+    
+    // Add click event listeners to tab buttons
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons and contents
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            tabContents.forEach(content => content.classList.remove('active'));
+            
+            // Add active class to clicked button and corresponding content
+            button.classList.add('active');
+            const tabId = button.getAttribute('data-tab');
+            document.getElementById(tabId).classList.add('active');
+        });
+    });
+
+    // Expand button functionality
+    const expandBtn = document.getElementById('expandSectionBtn');
+    const additionalSection = document.getElementById('additionalSection');
+    const teamTabBtn = document.querySelector('[data-tab="execoms"]');
+    const coreTabBtn = document.querySelector('[data-tab="core-team"]');
+    
+    if (expandBtn && additionalSection && teamTabBtn && coreTabBtn) {
+        // Only show button when in core team tab
+        function updateButtonVisibility() {
+            if (coreTabBtn.classList.contains('active')) {
+                expandBtn.style.display = 'inline-flex';
+            } else {
+                expandBtn.style.display = 'none';
+            }
+        }
+
+        // Initial visibility check
+        updateButtonVisibility();
+
+        // Update visibility when tabs change
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', updateButtonVisibility);
+        });
+
+        expandBtn.addEventListener('click', function() {
+            // Switch to team tab
+            teamTabBtn.click();
+            
+            // Hide the button after switching tabs
+            expandBtn.style.display = 'none';
+            
+            // Scroll to the top of the team tab content
+            const teamTabContent = document.querySelector('.card');
+            if (teamTabContent) {
+                teamTabContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    }
+});
