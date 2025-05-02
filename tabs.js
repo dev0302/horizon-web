@@ -41,6 +41,16 @@ function initTeamTabs() {
             input.value = '';
             input.dispatchEvent(new Event('input'));
         });
+
+        // Handle Meet More Team Members button visibility
+        const expandBtn = document.getElementById('expandSectionBtn');
+        if (expandBtn) {
+            if (tabId === 'core-team') {
+                expandBtn.style.display = 'inline-flex';
+            } else {
+                expandBtn.style.display = 'none';
+            }
+        }
       });
     });
   }
