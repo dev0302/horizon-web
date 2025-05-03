@@ -132,7 +132,9 @@
 .testimonial-grid .testimonial-card[data-member="areen"],
 .testimonial-grid .testimonial-card[data-member="yash_nagar"] {
     gap: 0.5rem;
-    min-height: 220px;
+    min-height: 220px !important;
+    height: 220px !important;
+    max-height: 220px !important;
 }
 
 /* Override hover height change for core team cards */
@@ -140,7 +142,9 @@
 .testimonial-grid .testimonial-card[data-member="riya"]:hover,
 .testimonial-grid .testimonial-card[data-member="areen"]:hover,
 .testimonial-grid .testimonial-card[data-member="yash_nagar"]:hover {
-    min-height: 220px;
+    min-height: 220px !important;
+    height: 220px !important;
+    max-height: 220px !important;
 }
 
 .testimonial-card {
@@ -168,7 +172,7 @@
     transform: scale(1.05);
     border: 1px solid rgba(255, 255, 255, 0.5);
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
-    min-height: 250px;
+
 }
 
 .testimonial-card::before {
@@ -506,7 +510,9 @@
     .testimonial-grid .testimonial-card[data-member="areen"],
     .testimonial-grid .testimonial-card[data-member="yash_nagar"] {
         gap: 0.5rem;
-        min-height: 220px;
+        min-height: 220px !important;
+        height: 220px !important;
+        max-height: 220px !important;
     }
     
     /* Override hover height change for core team cards on mobile */
@@ -514,7 +520,9 @@
     .testimonial-grid .testimonial-card[data-member="riya"]:hover,
     .testimonial-grid .testimonial-card[data-member="areen"]:hover,
     .testimonial-grid .testimonial-card[data-member="yash_nagar"]:hover {
-        min-height: 220px;
+        min-height: 220px !important;
+        height: 220px !important;
+        max-height: 220px !important;
     }
     
     .testimonial-heading {
