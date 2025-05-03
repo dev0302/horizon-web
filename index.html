@@ -201,7 +201,7 @@
                 <h2 class="testimonial-heading">Core Team</h2>
                 <div class="testimonial-grid">
                   <!-- President -->
-                  <div class="testimonial-card">
+                  <div class="testimonial-card" data-member="udbhav">
                     <div class="testimonial-avatar">
                       <img src="./horizon_family_images/udbhav.png" alt="udbhav">
                     </div>
@@ -209,10 +209,14 @@
                       <h3>Udbhav</h3>
                       <p>President</p>
                     </div>
+                    <button class="view-profile-btn">
+                        <!-- <span></span> -->
+                        <i data-feather="arrow-right"></i>
+                    </button>
                   </div>
 
                   <!-- Vice President 1 -->
-                  <div class="testimonial-card">
+                  <div class="testimonial-card" data-member="riya">
                     <div class="testimonial-avatar">
                       <img src="./horizon_family_images/riya.png" alt="riya">
                     </div>
@@ -220,6 +224,10 @@
                       <h3>Riya</h3>
                       <p>Vice President</p>
                     </div>
+                    <button class="view-profile-btn">
+                        <!-- <span></span> -->
+                        <i data-feather="arrow-right"></i>
+                    </button>
                   </div>
                   
 
@@ -235,7 +243,7 @@
                   </div> -->
 
                   <!-- General Secretary 2 -->
-                  <div class="testimonial-card">
+                  <div class="testimonial-card" data-member="areen">
                     <div class="testimonial-avatar">
                       <img src="./horizon_family_images/areen.png" alt="areen">
                     </div>
@@ -243,10 +251,14 @@
                       <h3>Areen Kaur</h3>
                       <p>General Secretary</p>
                     </div>
+                    <button class="view-profile-btn">
+                        <!-- <span></span> -->
+                        <i data-feather="arrow-right"></i>
+                    </button>
                   </div>
 
                   <!-- Treasurer -->
-                  <div class="testimonial-card">
+                  <div class="testimonial-card" data-member="yash_nagar">
                     <div class="testimonial-avatar">
                       <img src="./horizon_family_images/yash_nagar.png" alt="yash_nagar">
                     </div>
@@ -254,6 +266,10 @@
                       <h3>Yash Nagar</h3>
                       <p>Treasurer</p>
                     </div>
+                    <button class="view-profile-btn">
+                        <!-- <span></span> -->
+                        <i data-feather="arrow-right"></i>
+                    </button>
                   </div>
                 </div>
 
@@ -1046,16 +1062,44 @@
       </main>
     </div>
 
+  <!-- Member Modal Structure -->
+  <div class="member-modal" id="memberModal">
+      <div class="modal-content">
+          <button class="modal-close">&times;</button>
+          <div class="modal-header">
+              <div class="modal-image">
+                  <img src="" alt="Member Image">
+              </div>
+              <h2></h2>
+              <p class="position"></p>
+          </div>
+          <div class="modal-body">
+              <div class="modal-info">
+                  <div class="info-item">
+                      <i data-feather="book"></i>
+                      <span class="branch"></span>
+                  </div>
+                  <div class="info-item">
+                      <i data-feather="calendar"></i>
+                      <span class="year"></span>
+                  </div>
+              </div>
+              <div class="modal-description"></div>
+          </div>
+      </div>
+  </div>
+
   <!-- JavaScript Files -->
   <script src="navigation.js"></script>
   <script src="animations.js"></script>
   <script src="tabs.js"></script>
-<script src="typing.js"></script>
-<script src="text-effects.js"></script>
+  <script src="typing.js"></script>
+  <script src="text-effects.js"></script>
   <script src="landingpage.js"></script>
   <script src="scroll-animations.js"></script>
-<script src="scroll-animation.js"></script>
-<script src="Event_Calendar/event_calendar.js"></script>
+  <script src="scroll-animation.js"></script>
+  <script src="member-modal.js"></script>
+  <script src="Event_Calendar/event_calendar.js"></script>
 
 <script>
   feather.replace();
