@@ -151,8 +151,8 @@
 }
 
 .testimonial-avatar{
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
     margin: 0 auto 1rem;
     border-radius: 50%;
     overflow: hidden;
@@ -803,10 +803,9 @@
         column-gap: 2rem;
     }
     .testimonial-card {
-        min-width: 7rem;
-        min-height: 160px;
+        min-width: 8rem;
+        min-height: 180px;
         height: 120px;
-        max-height: 140px;
     }
     /* overlap */
     .testimonial-grid {
@@ -825,8 +824,8 @@
         gap: 0.35rem;
     }
     .testimonial-avatar{
-        height: 4rem;
-        width: 4rem;
+        height: 5.4rem;
+        width: 5.4rem;
     }
 }
 
