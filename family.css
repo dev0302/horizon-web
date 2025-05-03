@@ -126,6 +126,15 @@
     margin-top: 2rem;
 }
 
+/* Specific styles for core team members */
+.testimonial-grid .testimonial-card[data-member="udbhav"],
+.testimonial-grid .testimonial-card[data-member="riya"],
+.testimonial-grid .testimonial-card[data-member="areen"],
+.testimonial-grid .testimonial-card[data-member="yash_nagar"] {
+    gap: 0.5rem;
+    min-height: 220px;
+}
+
 .testimonial-card {
     padding: 1.2rem;
     border: 1px solid transparent;
@@ -481,6 +490,15 @@
         grid-template-columns: repeat(3, minmax(200px, 1fr));
         gap: 1.5rem;
         padding: 1rem;
+    }
+    
+    /* Maintain smaller gap and specific height for core team members on mobile */
+    .testimonial-grid .testimonial-card[data-member="udbhav"],
+    .testimonial-grid .testimonial-card[data-member="riya"],
+    .testimonial-grid .testimonial-card[data-member="areen"],
+    .testimonial-grid .testimonial-card[data-member="yash_nagar"] {
+        gap: 0.5rem;
+        min-height: 220px;
     }
     
     .testimonial-heading {
@@ -846,7 +864,7 @@
     }
     .testimonial-card {
         min-width: 8rem;
-        min-height: 220px;
+        min-height: 180px;
         height: 120px;
     }
     /* overlap */
