@@ -7,15 +7,15 @@ const memberData = {
     'udbhav': {
         name: 'Udbhav',
         position: 'President',
-        branch: 'Electronics and Communication Engineering',
+        branch: 'ECE',
         year: '2nd Year',
-        description: 'Passionate about Leadership and achieving goals together. Leading the Horizon team with dedication and vision.',
+        description: 'Leading the Horizon team with dedication and vision.',
         image: './horizon_family_images/udbhav.png'
     },
     'riya': {
         name: 'Riya',
         position: 'Vice President',
-        branch: 'Computer Science',
+        branch: 'CSE',
         year: '1st Year',
         description: 'Creative thinker and effective communicator. Bringing innovative ideas to the team.',
         image: './horizon_family_images/riya.png'
@@ -23,18 +23,12 @@ const memberData = {
     'areen': {
         name: 'Areen Kaur',
         position: 'General Secretary',
-        branch: 'Computer Science',
+        branch: 'CSE',
         year: '1st Year',
         description: 'Dedicated to organizing and managing society events with precision and creativity.',
         image: './horizon_family_images/areen.png'
     },
-    // 'aahana': {
-    //     name: 'Aahana Verma',
-    //     position: 'Sponsorship Head',
-    //     branch: 'CSE-AIML',
-    //     year: '1st Year',
-    //     image: './horizon_family_images/aahana.png'
-    // },
+    
     // 'yash_nagar': {
     //     name: 'Yash Nagar',
     //     position: 'Treasurer',
@@ -46,13 +40,111 @@ const memberData = {
 };
 //changeeeeee
 const memberData2 = {
+    'mehul': {
+        name: 'Mehul',
+        position: 'Event Management Head',
+        branch: 'CSE-AIML',
+        year: '1st Year',
+        image: './horizon_family_images/mehul.png'
+    },
+    'dushyant': {
+        name: 'Dushyant',
+        position: 'Event Management Head',
+        branch: 'CSE-AIML',
+        year: '1st Year',
+        image: './horizon_family_images/dushyant.png'
+    },
+    'ananya_priya': {
+        name: 'Ananya Priya',
+        position: 'Public Speaking Head',
+        branch: 'CSE-AIML',
+        year: '1st Year',
+        image: './horizon_family_images/ananya_priya.png'
+    },
+    'krishna': {
+        name: 'Krishna Bhatia',
+        position: 'Public Speaking Head',
+        branch: 'CSE-AIML',
+        year: '1st Year',
+        image: './horizon_family_images/krishna.png'
+    },
+    'aditya_pandey': {
+        name: 'Aditya Pandey',
+        position: 'Video Editing Head',
+        branch: 'CSE-AIML',
+        year: '1st Year',
+        image: './horizon_family_images/aditya_pandey.png'
+    },
     'aahana': {
-        name: 'Aahana Verma',
+        name: 'Aahana',
         position: 'Sponsorship Head',
         branch: 'CSE-AIML',
         year: '1st Year',
         image: './horizon_family_images/aahana.png'
     },
+    'tanvi': {
+        name: 'Tanvi',
+        position: 'Sponsorship Head',
+        branch: 'CSE-AIML',
+        year: '1st Year',
+        image: './horizon_family_images/tanvi.png'
+    },
+    'shreya_sharma': {
+        name: 'Shreya Sharma',
+        position: 'Publicity Head',
+        branch: 'CSE-AIML',
+        year: '1st Year',
+        image: './horizon_family_images/shreya_sharma.png'
+    },
+    'shivangi': {
+        name: 'Shivangi',
+        position: 'Publicity Head',
+        branch: 'CSE-AIML',
+        year: '1st Year',
+        image: './horizon_family_images/shivangi.png'
+    },
+    'dev_dogra': {
+        name: 'Dev Dogra',
+        position: 'Social Media Head',
+        branch: 'CSE-AIML',
+        year: '1st Year',
+        image: './horizon_family_images/dev_dogra.png'
+    },
+    'anushka_prakash': {
+        name: 'Anushka Prakash',
+        position: 'Social Media Head',
+        branch: 'CSE-AIML',
+        year: '1st Year',
+        image: './horizon_family_images/anushka_prakash.png'
+    },
+    'pavni': {
+        name: 'Pavni',
+        position: 'Research & Analysis Head',
+        branch: 'CSE-AIML',
+        year: '1st Year',
+        image: './horizon_family_images/pavni.png'
+    },
+    'bhavya_gupta': {
+        name: 'Bhavya Gupta',
+        position: 'Research & Analysis Head',
+        branch: 'CSE-AIML',
+        year: '1st Year',
+        image: './horizon_family_images/bhavya_gupta.png'
+    },
+    'yash_kumar': {
+        name: 'Yash Kumar',
+        position: 'Creativity & Design Head',
+        branch: 'CSE-AIML',
+        year: '1st Year',
+        image: './horizon_family_images/yash_kumar.png'
+    },
+    'dhruv': {
+        name: 'Dhruv',
+        position: 'Creativity & Design Head',
+        branch: 'CSE-AIML',
+        year: '1st Year',
+        image: './horizon_family_images/dhruv.png'
+    }
 };
 
 // Initialize modal functionality
@@ -73,9 +165,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const member2 = memberData2[memberId];
         console.log(member2);
         
-        if (member) {
-            console.log("its member");
-            
+        if (member) {          
             modalImage.src = member.image;
             modalImage.alt = member.name;
             modalName.textContent = member.name;
@@ -89,9 +179,7 @@ document.addEventListener('DOMContentLoaded', function() {
             feather.replace();
         }
         //new-----------------
-        else if(member2) {
-            console.log("its memebr2");
-            
+        else if(member2) {            
             modalImage.src = member2.image;
             modalImage.alt = member2.name;
             modalName.textContent = memberData2.name;
@@ -104,7 +192,9 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log("Added");
 
             // to modify the max-width when active
-            document.querySelector('.modal-content').style.maxWidth = '300px';
+            document.querySelector('.modal-content').style.maxWidth = '250px';
+            // Hide the description section
+            document.querySelector('.modal-description').style.display = 'none';
             
             document.body.style.overflow = 'hidden';
             feather.replace();
@@ -134,9 +224,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Close modal when clicking the close button
     closeBtn.addEventListener('click', () => {
         modal.classList.remove('active');
-        document.querySelector('.modal-content').style.maxWidth = '700px';
-        console.log("done-700");
-        
+        document.querySelector('.modal-content').style.maxWidth = '700px'; 
         document.body.style.overflow = '';
     });
 
