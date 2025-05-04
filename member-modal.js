@@ -9,7 +9,7 @@ const memberData = {
         position: 'President',
         branch: 'Electronics and Communication Engineering',
         year: '2nd Year',
-        description: 'Passionate about technology and leadership. Leading the Horizon team with dedication and vision.',
+        description: 'Passionate about Leadership and achieving goals together. Leading the Horizon team with dedication and vision.',
         image: './horizon_family_images/udbhav.png'
     },
     'riya': {
@@ -28,14 +28,14 @@ const memberData = {
         description: 'Dedicated to organizing and managing society events with precision and creativity.',
         image: './horizon_family_images/areen.png'
     },
-    'yash_nagar': {
-        name: 'Yash Nagar',
-        position: 'Treasurer',
-        branch: 'Computer Science',
-        year: '1st Year',
-        description: 'Expert in financial management and resource allocation for the society.',
-        image: './horizon_family_images/yash_nagar.png'
-    }
+    // 'yash_nagar': {
+    //     name: 'Yash Nagar',
+    //     position: 'Treasurer',
+    //     branch: 'Computer Science',
+    //     year: '1st Year',
+    //     description: '',
+    //     image: './horizon_family_images/yash_nagar.png'
+    // }
 };
 
 // Initialize modal functionality
@@ -49,26 +49,40 @@ document.addEventListener('DOMContentLoaded', function() {
     const modalDescription = modal.querySelector('.modal-description');
     const closeBtn = modal.querySelector('.modal-close');
 
+    // Function to open modal with member data
+    function openMemberModal(memberId) {
+        const member = memberData[memberId];
+        if (member) {
+            modalImage.src = member.image;
+            modalImage.alt = member.name;
+            modalName.textContent = member.name;
+            modalPosition.textContent = member.position;
+            modalBranch.textContent = member.branch;
+            modalYear.textContent = member.year;
+            modalDescription.textContent = member.description;
+            
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            feather.replace();
+        }
+    }
+
     // Add click event listeners to view profile buttons
     document.querySelectorAll('.view-profile-btn').forEach(button => {
         button.addEventListener('click', function(e) {
             e.stopPropagation();
             const card = this.closest('.testimonial-card');
             const memberId = card.getAttribute('data-member');
-            const member = memberData[memberId];
-            
-            if (member) {
-                modalImage.src = member.image;
-                modalImage.alt = member.name;
-                modalName.textContent = member.name;
-                modalPosition.textContent = member.position;
-                modalBranch.textContent = member.branch;
-                modalYear.textContent = member.year;
-                modalDescription.textContent = member.description;
-                
-                modal.classList.add('active');
-                document.body.style.overflow = 'hidden';
-                feather.replace();
+            openMemberModal(memberId);
+        });
+    });
+
+    // Add click event listeners to testimonial cards
+    document.querySelectorAll('.testimonial-card').forEach(card => {
+        card.addEventListener('click', function() {
+            const memberId = this.getAttribute('data-member');
+            if (memberId) {
+                openMemberModal(memberId);
             }
         });
     });
