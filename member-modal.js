@@ -28,6 +28,13 @@ const memberData = {
         description: 'Dedicated to organizing and managing society events with precision and creativity.',
         image: './horizon_family_images/areen.png'
     },
+    // 'aahana': {
+    //     name: 'Aahana Verma',
+    //     position: 'Sponsorship Head',
+    //     branch: 'CSE-AIML',
+    //     year: '1st Year',
+    //     image: './horizon_family_images/aahana.png'
+    // },
     // 'yash_nagar': {
     //     name: 'Yash Nagar',
     //     position: 'Treasurer',
@@ -37,10 +44,21 @@ const memberData = {
     //     image: './horizon_family_images/yash_nagar.png'
     // }
 };
+//changeeeeee
+const memberData2 = {
+    'aahana': {
+        name: 'Aahana Verma',
+        position: 'Sponsorship Head',
+        branch: 'CSE-AIML',
+        year: '1st Year',
+        image: './horizon_family_images/aahana.png'
+    },
+};
 
 // Initialize modal functionality
 document.addEventListener('DOMContentLoaded', function() {
     const modal = document.getElementById('memberModal');
+    // const modal2 = document.querySelector('.modal-content_heads');
     const modalImage = modal.querySelector('.modal-image img');
     const modalName = modal.querySelector('h2');
     const modalPosition = modal.querySelector('.position');
@@ -52,7 +70,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to open modal with member data
     function openMemberModal(memberId) {
         const member = memberData[memberId];
+        const member2 = memberData2[memberId];
+        console.log(member2);
+        
         if (member) {
+            console.log("its member");
+            
             modalImage.src = member.image;
             modalImage.alt = member.name;
             modalName.textContent = member.name;
@@ -62,6 +85,27 @@ document.addEventListener('DOMContentLoaded', function() {
             modalDescription.textContent = member.description;
             
             modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            feather.replace();
+        }
+        //new-----------------
+        else if(member2) {
+            console.log("its memebr2");
+            
+            modalImage.src = member2.image;
+            modalImage.alt = member2.name;
+            modalName.textContent = memberData2.name;
+            modalPosition.textContent = member2.position;
+            modalBranch.textContent = member2.branch;
+            modalYear.textContent = member2.year;
+            modalDescription.textContent = member2.description;
+                    
+            modal.classList.add('active');
+            console.log("Added");
+
+            // to modify the max-width when active
+            document.querySelector('.modal-content').style.maxWidth = '300px';
+            
             document.body.style.overflow = 'hidden';
             feather.replace();
         }
@@ -90,6 +134,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Close modal when clicking the close button
     closeBtn.addEventListener('click', () => {
         modal.classList.remove('active');
+        document.querySelector('.modal-content').style.maxWidth = '700px';
+        console.log("done-700");
+        
         document.body.style.overflow = '';
     });
 

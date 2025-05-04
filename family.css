@@ -1408,7 +1408,7 @@
   margin-top: -4rem;
 }
 
-/* Modal Styles */
+/* Modal Styles --------------------- */
 .member-modal {
     position: fixed;
     top: 0;
@@ -1424,8 +1424,8 @@
     opacity: 0;
     visibility: hidden;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-
 }
+
 
 .member-modal.active {
     opacity: 1;
@@ -1436,7 +1436,7 @@
     background: #1e293b;
     border-radius: 1rem;
     width: 90%;
-    max-width: 800px;
+    max-width: 700px;
     max-height: 85vh;
     position: relative;
     transform: scale(0.95) translateY(20px);
@@ -1448,6 +1448,14 @@
     overflow-y: hidden;
     scrollbar-width: thin;
     scrollbar-color: rgba(56, 189, 248, 0.3) transparent;
+}
+
+
+.member-modal.active .modal-content {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+    height: auto;
+    min-height: 400px;
 }
 
 .member-modal.active .modal-content {
@@ -1516,8 +1524,8 @@
 }
 
 .modal-image {
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     margin: 0 auto 1.5rem;
     border: 3px solid #38bff89a;
@@ -1588,6 +1596,7 @@
 .modal-info {
     display: flex;
     flex-direction: column;
+    min-width: 200px;
     gap: 1rem;
 }
 
