@@ -80,105 +80,244 @@ const memberData2 = {
         position: 'Event Management Head',
         branch: 'CSE-AIML',
         year: '1st Year',
-        image: './horizon_family_images/mehul.png'
+        image: './horizon_family_images/mehul.png',
+        role: {
+            title: 'Backbone of event execution — from planning to on-ground coordination',
+            responsibilities: [
+                'Conceptualize and plan events (themes, schedules, logistics)',
+                'Book venues, manage permissions, seating, and equipment',
+                'Handle registration, crowd flow, and team allocation during events',
+                'Coordinate with other departments to ensure smooth event delivery',
+                'Maintain event checklists, timelines, and feedback'
+            ]
+        }
     },
     'dushyant': {
         name: 'Dushyant',
         position: 'Event Management Head',
         branch: 'CSE-AIML',
         year: '1st Year',
-        image: './horizon_family_images/dushyant.png'
+        image: './horizon_family_images/dushyant.png',
+        role: {
+            title: 'Backbone of event execution — from planning to on-ground coordination',
+            responsibilities: [
+                'Conceptualize and plan events (themes, schedules, logistics)',
+                'Book venues, manage permissions, seating, and equipment',
+                'Handle registration, crowd flow, and team allocation during events',
+                'Coordinate with other departments to ensure smooth event delivery',
+                'Maintain event checklists, timelines, and feedback'
+            ]
+        }
     },
     'ananya_priya': {
         name: 'Ananya Priya',
         position: 'Public Speaking Head',
         branch: 'CSE-AIML',
         year: '1st Year',
-        image: './horizon_family_images/ananya_priya.png'
+        image: './horizon_family_images/ananya_priya.png',
+        role: {
+            title: 'Voice and face of the society at events',
+            responsibilities: [
+                'Host events, competitions, and formal ceremonies',
+                'Write and rehearse scripts for anchoring and presentations',
+                'Represent the society at inter-college events or collaborations',
+                'Coordinate with Event & Management to time speeches and transitions'
+            ]
+        }
     },
     'krishna': {
         name: 'Krishna Bhatia',
         position: 'Public Speaking Head',
         branch: 'CSE-AIML',
         year: '1st Year',
-        image: './horizon_family_images/krishna.png'
+        image: './horizon_family_images/krishna.png',
+        role: {
+            title: 'Voice and face of the society at events',
+            responsibilities: [
+                'Host events, competitions, and formal ceremonies',
+                'Write and rehearse scripts for anchoring and presentations',
+                'Represent the society at inter-college events or collaborations',
+                'Coordinate with Event & Management to time speeches and transitions'
+            ]
+        }
     },
     'aditya_pandey': {
         name: 'Aditya Pandey',
         position: 'Video Editing Head',
         branch: 'CSE-AIML',
         year: '1st Year',
-        image: './horizon_family_images/aditya_pandey.png'
+        image: './horizon_family_images/aditya_pandey.png',
+        role: {
+            title: 'Storytelling through motion and visuals',
+            responsibilities: [
+                'Create teasers, event aftermovies, and short reels',
+                'Handle basic cinematography if needed during events',
+                'Edit promotional videos, trailers, and documentation clips',
+                'Sync with Design and Social Media for publishing content'
+            ]
+        }
     },
     'aahana': {
         name: 'Aahana',
         position: 'Sponsorship Head',
         branch: 'CSE-AIML',
         year: '1st Year',
-        image: './horizon_family_images/aahana.png'
+        image: './horizon_family_images/aahana.png',
+        role: {
+            title: 'Funding and resource acquisition wing',
+            responsibilities: [
+                'Reach out to potential sponsors and partners',
+                'Prepare sponsorship decks and presentations',
+                'Negotiate deals and manage sponsor relations',
+                'Ensure deliverables to sponsors are met post-event (brand placement, posts, etc.)'
+            ]
+        }
     },
     'tanvi': {
         name: 'Tanvi',
         position: 'Sponsorship Head',
         branch: 'CSE-AIML',
         year: '1st Year',
-        image: './horizon_family_images/tanvi.png'
+        image: './horizon_family_images/tanvi.png',
+        role: {
+            title: 'Funding and resource acquisition wing',
+            responsibilities: [
+                'Reach out to potential sponsors and partners',
+                'Prepare sponsorship decks and presentations',
+                'Negotiate deals and manage sponsor relations',
+                'Ensure deliverables to sponsors are met post-event (brand placement, posts, etc.)'
+            ]
+        }
     },
     'shreya_sharma': {
         name: 'Shreya Sharma',
         position: 'Publicity Head',
         branch: 'CSE-AIML',
         year: '1st Year',
-        image: './horizon_family_images/shreya_sharma.png'
+        image: './horizon_family_images/shreya_sharma.png',
+        role: {
+            title: 'Outreach and promotions team',
+            responsibilities: [
+                'Promote events across college campuses and online',
+                'Handle offline promotion — posters, banners, announcements',
+                'Engage with class representatives and societies for word-of-mouth reach',
+                'Collaborate with Social Media for coordinated campaigns'
+            ]
+        }
     },
     'shivangi': {
         name: 'Shivangi',
         position: 'Publicity Head',
         branch: 'CSE-AIML',
         year: '1st Year',
-        image: './horizon_family_images/shivangi.png'
+        image: './horizon_family_images/shivangi.png',
+        role: {
+            title: 'Outreach and promotions team',
+            responsibilities: [
+                'Promote events across college campuses and online',
+                'Handle offline promotion — posters, banners, announcements',
+                'Engage with class representatives and societies for word-of-mouth reach',
+                'Collaborate with Social Media for coordinated campaigns'
+            ]
+        }
     },
     'dev_dogra': {
         name: 'Dev Dogra',
         position: 'Social Media Head',
         branch: 'CSE-AIML',
         year: '1st Year',
-        image: './horizon_family_images/dev_dogra.png'
+        image: './horizon_family_images/dev_dogra.png',
+        role: {
+            title: 'Digital presence manager for visibility and engagement',
+            responsibilities: [
+                'Manage and grow the society\'s Instagram, LinkedIn, and other handles',
+                'Post event updates, announcements, and highlights',
+                'Maintain a consistent content calendar and brand tone',
+                'Engage with followers through comments, DMs, and trends',
+                'Collaborate with Design and Video teams for assets'
+            ]
+        }
     },
     'anushka_prakash': {
         name: 'Anushka Prakash',
         position: 'Social Media Head',
         branch: 'CSE-AIML',
         year: '1st Year',
-        image: './horizon_family_images/anushka_prakash.png'
+        image: './horizon_family_images/anushka_prakash.png',
+        role: {
+            title: 'Digital presence manager for visibility and engagement',
+            responsibilities: [
+                'Manage and grow the society\'s Instagram, LinkedIn, and other handles',
+                'Post event updates, announcements, and highlights',
+                'Maintain a consistent content calendar and brand tone',
+                'Engage with followers through comments, DMs, and trends',
+                'Collaborate with Design and Video teams for assets'
+            ]
+        }
     },
     'pavni': {
         name: 'Pavni',
         position: 'Research & Analysis Head',
         branch: 'CSE-AIML',
         year: '1st Year',
-        image: './horizon_family_images/pavni.png'
+        image: './horizon_family_images/pavni.png',
+        role: {
+            title: 'Strategy and insight team for data-backed decisions',
+            responsibilities: [
+                'Conduct surveys, post-event analysis, and audience profiling',
+                'Research trends for events, competitions, and student preferences',
+                'Analyze performance of previous events and suggest improvements',
+                'Support content teams with factual data and references'
+            ]
+        }
     },
     'bhavya_gupta': {
         name: 'Bhavya Gupta',
         position: 'Research & Analysis Head',
         branch: 'CSE-AIML',
         year: '1st Year',
-        image: './horizon_family_images/bhavya_gupta.png'
+        image: './horizon_family_images/bhavya_gupta.png',
+        role: {
+            title: 'Strategy and insight team for data-backed decisions',
+            responsibilities: [
+                'Conduct surveys, post-event analysis, and audience profiling',
+                'Research trends for events, competitions, and student preferences',
+                'Analyze performance of previous events and suggest improvements',
+                'Support content teams with factual data and references'
+            ]
+        }
     },
     'yash_kumar': {
         name: 'Yash Kumar',
         position: 'Creativity & Design Head',
         branch: 'CSE-AIML',
         year: '1st Year',
-        image: './horizon_family_images/yash_kumar.png'
+        image: './horizon_family_images/yash_kumar.png',
+        role: {
+            title: 'Visual brand custodian — makes everything look appealing and cohesive',
+            responsibilities: [
+                'Design posters, banners, certificates, social media creatives, etc.',
+                'Ensure visual consistency and branding across all platforms',
+                'Create stage backdrops, merchandise, ID cards as required',
+                'Collaborate with the Social Media and Publicity teams'
+            ]
+        }
     },
     'dhruv': {
         name: 'Dhruv',
         position: 'Creativity & Design Head',
         branch: 'CSE-AIML',
         year: '1st Year',
-        image: './horizon_family_images/dhruv.png'
+        image: './horizon_family_images/dhruv.png',
+        role: {
+            title: 'Visual brand custodian — makes everything look appealing and cohesive',
+            responsibilities: [
+                'Design posters, banners, certificates, social media creatives, etc.',
+                'Ensure visual consistency and branding across all platforms',
+                'Create stage backdrops, merchandise, ID cards as required',
+                'Collaborate with the Social Media and Publicity teams'
+            ]
+        }
     }
 };
 
@@ -234,16 +373,27 @@ document.addEventListener('DOMContentLoaded', function() {
             modalPosition.textContent = member2.position;
             modalBranch.textContent = member2.branch;
             modalYear.textContent = member2.year;
-            modalDescription.textContent = member2.description;
-            roleInfo.style.display = 'none';
-                    
+            modalDescription.textContent = member2.description || '';
+            
+            // Handle role information for department heads
+            if (member2.role) {
+                roleInfo.style.display = 'block';
+                roleContent.innerHTML = `
+                    <p class="role-title">${member2.role.title}</p>
+                    <ul class="role-responsibilities">
+                        ${member2.role.responsibilities.map(resp => `<li>${resp}</li>`).join('')}
+                    </ul>
+                `;
+            } else {
+                roleInfo.style.display = 'none';
+            }
+            
             modal.classList.add('active');
-            document.querySelector('.modal-content').style.maxWidth = '250px';
-            document.querySelector('.modal-content').style.minWidth = '250px';
-            document.querySelector('.modal-description').style.display = 'none';
-             // Set overflow-y: hidden through JavaScript
-            document.querySelector('.modal-content').style.overflowY = 'hidden';
-            document.querySelector('.modal-content').style.display = 'block';            
+            document.querySelector('.modal-content').style.maxWidth = '700px';
+            document.querySelector('.modal-content').style.minWidth = '60%';
+            document.querySelector('.modal-description').style.display = 'block';
+            // document.querySelector('.modal-content').style.overflowY = 'auto';
+            document.querySelector('.modal-content').style.display = 'flex';
             document.body.style.overflow = 'hidden';
             feather.replace();
         }
@@ -275,7 +425,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.modal-content').style.maxWidth = '700px';
         document.querySelector('.modal-content').style.minWidth = '80%';
         document.querySelector('.modal-description').style.display = 'block'; 
-        document.querySelector('.modal-content').style.overflowY = 'auto';
+        // document.querySelector('.modal-content').style.overflowY = 'auto';
         document.querySelector('.modal-content').style.display = 'flex';            
 
         document.body.style.overflow = '';

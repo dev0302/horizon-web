@@ -1447,7 +1447,7 @@
     border: 1px solid rgba(56, 189, 248, 0.2);
     opacity: 0;
     height: 0;
-    overflow-y: auto;
+    overflow-y: hidden;
     overflow-x: hidden;
     scrollbar-width: thin;
     scrollbar-color: rgba(56, 189, 248, 0.3) transparent;
@@ -1678,6 +1678,7 @@
         overflow-x: hidden;
         width: 80%;
         margin: 1rem;
+        overflow-y: auto;
     }
     .modal-info{
         flex-direction: row;
