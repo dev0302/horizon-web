@@ -38,6 +38,23 @@ const memberData = {
             ]
         }
     },
+    'dev_malik': {
+        name: 'Dev Malik',
+        position: 'General Secretary and Developer',
+        branch: 'CSE',
+        year: '1st Year',
+        description: 'Handles society records and documents while maintaining the official website - keeping both our operations and digital presence running smoothly.',
+        image: './horizon_family_images/dev_malik.png',
+        role: {
+            title: 'Administrative and communication lead',
+            responsibilities: [
+                'Maintains official documentation (minutes of meetings, reports, records)',
+                'Develops and updates the society website',
+                'Helps manage logistics and scheduling of meetings and events',
+                'Works on society policies, documentation, and registration'
+            ]
+        }
+    },
     'areen': {
         name: 'Areen Kaur',
         position: 'General Secretary',

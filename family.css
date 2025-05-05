@@ -472,9 +472,9 @@
 }
 
 /* Responsive Breakpoints */
-@media (min-width: 1000px) {
+@media (min-width: 1100px) {
     .testimonial-grid{
-        grid-template-columns: repeat(4, minmax(140px, 1fr));
+        grid-template-columns: repeat(5, minmax(140px, 1fr));
         row-gap: 2.5rem;
         column-gap: 2.5rem;
     }
@@ -491,7 +491,8 @@
     .testimonial-grid .testimonial-card[data-member="udbhav"],
     .testimonial-grid .testimonial-card[data-member="riya"],
     .testimonial-grid .testimonial-card[data-member="areen"],
-    .testimonial-grid .testimonial-card[data-member="yash_nagar"] {
+    .testimonial-grid .testimonial-card[data-member="yash_nagar"],
+    .testimonial-grid .testimonial-card[data-member="dev_malik"] {
         gap: 0.5rem;
         min-height: 220px !important;
         height: 220px !important;
@@ -502,7 +503,8 @@
     .testimonial-grid .testimonial-card[data-member="udbhav"]:hover,
     .testimonial-grid .testimonial-card[data-member="riya"]:hover,
     .testimonial-grid .testimonial-card[data-member="areen"]:hover,
-    .testimonial-grid .testimonial-card[data-member="yash_nagar"]:hover {
+    .testimonial-grid .testimonial-card[data-member="yash_nagar"],
+    .testimonial-grid .testimonial-card[data-member="dev_malik"]:hover {
         min-height: 220px !important;
         height: 220px !important;
         max-height: 220px !important;
