@@ -74,41 +74,41 @@ const memberData = {
     },
     'yash_nagar': {
         name: 'Yash Nagar',
-        position: 'Treasurer',
+        position: 'Treasurer and Vice President 2',
         branch: 'CSE',
         year: '1st Year',
-        description: 'Financial expert managing society\'s resources efficiently.',
+        description: 'Financial strategist ensuring fiscal discipline while contributing to leadership decisions.',
         image: './horizon_family_images/yash_nagar.png',
         role: {
-            title: 'Financial head of the society',
+            title: 'Finance & Leadership',
             responsibilities: [
-                'Manages the society\'s funds, expenses, and income',
-                'Prepares and maintains budgets for events and annual activities',
-                'Ensures transparent financial reporting to faculty and student body',
-                'Coordinates with Sponsorship and P&D departments for funding utilization'
+                'Leads financial planning, budgeting, and expense management',
+                'Ensures transparency in fund allocation and reporting',
+                'Collaborates with the leadership team on key society decisions',
+                'Guides sponsorship and funding strategies for events'
             ]
         }
     }
 };
 //changeeeeee
 const memberData2 = {
-    'mehul': {
-        name: 'Mehul',
-        position: 'Event Management Head',
-        branch: 'CSE-AIML',
-        year: '1st Year',
-        image: './horizon_family_images/mehul.png',
-        role: {
-            title: 'Backbone of event execution — from planning to on-ground coordination',
-            responsibilities: [
-                'Conceptualize and plan events (themes, schedules, logistics)',
-                'Book venues, manage permissions, seating, and equipment',
-                'Handle registration, crowd flow, and team allocation during events',
-                'Coordinate with other departments to ensure smooth event delivery',
-                'Maintain event checklists, timelines, and feedback'
-            ]
-        }
-    },
+    // 'mehul': {
+    //     name: 'Mehul',
+    //     position: 'Event Management Head',
+    //     branch: 'CSE-AIML',
+    //     year: '1st Year',
+    //     image: './horizon_family_images/mehul.png',
+    //     role: {
+    //         title: 'Backbone of event execution — from planning to on-ground coordination',
+    //         responsibilities: [
+    //             'Conceptualize and plan events (themes, schedules, logistics)',
+    //             'Book venues, manage permissions, seating, and equipment',
+    //             'Handle registration, crowd flow, and team allocation during events',
+    //             'Coordinate with other departments to ensure smooth event delivery',
+    //             'Maintain event checklists, timelines, and feedback'
+    //         ]
+    //     }
+    // },
     'dushyant': {
         name: 'Dushyant',
         position: 'Event Management Head',
