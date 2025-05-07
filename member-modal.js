@@ -92,23 +92,22 @@ const memberData = {
 };
 //changeeeeee
 const memberData2 = {
-    // 'mehul': {
-    //     name: 'Mehul',
-    //     position: 'Event Management Head',
-    //     branch: 'CSE-AIML',
-    //     year: '1st Year',
-    //     image: './horizon_family_images/mehul.png',
-    //     role: {
-    //         title: 'Backbone of event execution — from planning to on-ground coordination',
-    //         responsibilities: [
-    //             'Conceptualize and plan events (themes, schedules, logistics)',
-    //             'Book venues, manage permissions, seating, and equipment',
-    //             'Handle registration, crowd flow, and team allocation during events',
-    //             'Coordinate with other departments to ensure smooth event delivery',
-    //             'Maintain event checklists, timelines, and feedback'
-    //         ]
-    //     }
-    // },
+    'shiv': {
+        name: 'Shiv',
+        position: 'Event Management Head',
+        branch: 'CSE',
+        year: '1st Year',
+        image: './horizon_family_images/shiv.png',
+        role: {
+            title: 'Backbone of event execution — from planning to on-ground coordination',
+            responsibilities: [
+                'Conceptualize and plan events (themes, schedules, logistics)',
+                'Book venues, manage permissions, seating, and equipment',
+                'Handle registration, crowd flow, and team allocation during events',
+                'Coordinate with other departments to ensure smooth event delivery'
+            ]
+        }
+    },
     'dushyant': {
         name: 'Dushyant',
         position: 'Event Management Head',
@@ -121,8 +120,7 @@ const memberData2 = {
                 'Conceptualize and plan events (themes, schedules, logistics)',
                 'Book venues, manage permissions, seating, and equipment',
                 'Handle registration, crowd flow, and team allocation during events',
-                'Coordinate with other departments to ensure smooth event delivery',
-                'Maintain event checklists, timelines, and feedback'
+                'Coordinate with other departments to ensure smooth event delivery'
             ]
         }
     },
