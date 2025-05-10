@@ -10,7 +10,7 @@ const memberData = {
         branch: 'ECE',
         year: '2nd Year',
         description: 'Leading the Horizon team with dedication and vision.',
-        image: './horizon_family_images/udbhav.png',
+        image: './horizon_family_images/udbhav.webp',
         role: {
             title: 'Chief leader and overall in-charge of the society',
             responsibilities: [
@@ -27,7 +27,7 @@ const memberData = {
         branch: 'CSE',
         year: '1st Year',
         description: 'Creative thinker and effective communicator. Bringing innovative ideas to the team.',
-        image: './horizon_family_images/riya.png',
+        image: './horizon_family_images/riya.webp',
         role: {
             title: 'Second-in-command and support to the President',
             responsibilities: [
@@ -44,7 +44,7 @@ const memberData = {
         branch: 'CSE',
         year: '1st Year',
         description: 'Handles society records and documents while maintaining the official website - keeping both our operations and digital presence running smoothly.',
-        image: './horizon_family_images/dev_malik.png',
+        image: './horizon_family_images/dev_malik.webp',
         role: {
             title: 'Administrative and communication lead',
             responsibilities: [
@@ -61,7 +61,7 @@ const memberData = {
         branch: 'CSE',
         year: '1st Year',
         description: 'Dedicated to organizing and managing society events with precision and creativity.',
-        image: './horizon_family_images/areen.png',
+        image: './horizon_family_images/areen.webp',
         role: {
             title: 'Administrative and communication lead',
             responsibilities: [
@@ -74,11 +74,11 @@ const memberData = {
     },
     'yash_nagar': {
         name: 'Yash Nagar',
-        position: 'Treasurer and Vice President 2',
+        position: 'Vice President',
         branch: 'CSE',
         year: '1st Year',
         description: 'Financial strategist ensuring fiscal discipline while contributing to leadership decisions.',
-        image: './horizon_family_images/yash_nagar.png',
+        image: './horizon_family_images/yash_nagar.webp',
         role: {
             title: 'Finance & Leadership',
             responsibilities: [
@@ -97,7 +97,7 @@ const memberData2 = {
         position: 'Event Management Head',
         branch: 'CSE',
         year: '1st Year',
-        image: './horizon_family_images/shiv.png',
+        image: './horizon_family_images/shiv.webp',
         role: {
             title: 'Backbone of event execution — from planning to on-ground coordination',
             responsibilities: [
@@ -113,7 +113,7 @@ const memberData2 = {
         position: 'Event Management Head',
         branch: 'CSE-AIML',
         year: '1st Year',
-        image: './horizon_family_images/dushyant.png',
+        image: './horizon_family_images/dushyant.webp',
         role: {
             title: 'Backbone of event execution — from planning to on-ground coordination',
             responsibilities: [
@@ -129,7 +129,7 @@ const memberData2 = {
         position: 'Public Speaking Head',
         branch: 'CSE-AIML',
         year: '1st Year',
-        image: './horizon_family_images/ananya_priya.png',
+        image: './horizon_family_images/ananya_priya.webp',
         role: {
             title: 'Voice and face of the society at events',
             responsibilities: [
@@ -145,7 +145,7 @@ const memberData2 = {
         position: 'Public Speaking Head',
         branch: 'CSE-AIML',
         year: '1st Year',
-        image: './horizon_family_images/krishna.png',
+        image: './horizon_family_images/krishna.webp',
         role: {
             title: 'Voice and face of the society at events',
             responsibilities: [
@@ -161,7 +161,7 @@ const memberData2 = {
         position: 'Video Editing Head',
         branch: 'CSE-AIML',
         year: '1st Year',
-        image: './horizon_family_images/aditya_pandey.png',
+        image: './horizon_family_images/aditya_pandey.webp',
         role: {
             title: 'Storytelling through motion and visuals',
             responsibilities: [
@@ -177,7 +177,7 @@ const memberData2 = {
         position: 'Sponsorship Head',
         branch: 'CSE-AIML',
         year: '1st Year',
-        image: './horizon_family_images/aahana.png',
+        image: './horizon_family_images/aahana.webp',
         role: {
             title: 'Funding and resource acquisition wing',
             responsibilities: [
@@ -193,7 +193,7 @@ const memberData2 = {
         position: 'Sponsorship Head',
         branch: 'CSE-AIML',
         year: '1st Year',
-        image: './horizon_family_images/tanvi.png',
+        image: './horizon_family_images/tanvi.webp',
         role: {
             title: 'Funding and resource acquisition wing',
             responsibilities: [
@@ -209,7 +209,7 @@ const memberData2 = {
         position: 'Publicity Head',
         branch: 'CSE-AIML',
         year: '1st Year',
-        image: './horizon_family_images/shreya_sharma.png',
+        image: './horizon_family_images/shreya_sharma.webp',
         role: {
             title: 'Outreach and promotions team',
             responsibilities: [
@@ -225,7 +225,7 @@ const memberData2 = {
         position: 'Publicity Head',
         branch: 'CSE-AIML',
         year: '1st Year',
-        image: './horizon_family_images/shivangi.png',
+        image: './horizon_family_images/shivangi.webp',
         role: {
             title: 'Outreach and promotions team',
             responsibilities: [
@@ -241,7 +241,7 @@ const memberData2 = {
         position: 'Social Media Head',
         branch: 'CSE-AIML',
         year: '1st Year',
-        image: './horizon_family_images/dev_dogra.png',
+        image: './horizon_family_images/dev_dogra.webp',
         role: {
             title: 'Digital presence manager for visibility and engagement',
             responsibilities: [
@@ -258,7 +258,7 @@ const memberData2 = {
         position: 'Social Media Head',
         branch: 'CSE-AIML',
         year: '1st Year',
-        image: './horizon_family_images/anushka_prakash.png',
+        image: './horizon_family_images/anushka_prakash.webp',
         role: {
             title: 'Digital presence manager for visibility and engagement',
             responsibilities: [
@@ -275,7 +275,7 @@ const memberData2 = {
         position: 'Research & Analysis Head',
         branch: 'CSE-AIML',
         year: '1st Year',
-        image: './horizon_family_images/pavni.png',
+        image: './horizon_family_images/pavni.webp',
         role: {
             title: 'Strategy and insight team for data-backed decisions',
             responsibilities: [
@@ -291,7 +291,7 @@ const memberData2 = {
         position: 'Research & Analysis Head',
         branch: 'CSE-AIML',
         year: '1st Year',
-        image: './horizon_family_images/bhavya_gupta.png',
+        image: './horizon_family_images/bhavya_gupta.webp',
         role: {
             title: 'Strategy and insight team for data-backed decisions',
             responsibilities: [
@@ -307,7 +307,7 @@ const memberData2 = {
         position: 'Creativity & Design Head',
         branch: 'CSE-AIML',
         year: '1st Year',
-        image: './horizon_family_images/yash_kumar.png',
+        image: './horizon_family_images/yash_kumar.webp',
         role: {
             title: 'Visual brand custodian — makes everything look appealing and cohesive',
             responsibilities: [
@@ -323,7 +323,7 @@ const memberData2 = {
         position: 'Creativity & Design Head',
         branch: 'CSE-AIML',
         year: '1st Year',
-        image: './horizon_family_images/dhruv.png',
+        image: './horizon_family_images/dhruv.webp',
         role: {
             title: 'Visual brand custodian — makes everything look appealing and cohesive',
             responsibilities: [
@@ -352,63 +352,52 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to open modal with member data
     function openMemberModal(memberId) {
-        const member = memberData[memberId];
-        const member2 = memberData2[memberId];
+        const member = memberData[memberId] || memberData2[memberId];
         
-        if (member) {          
+        if (member) {
             modalImage.src = member.image;
             modalImage.alt = member.name;
             modalName.textContent = member.name;
             modalPosition.textContent = member.position;
-            modalBranch.textContent = member.branch;
-            modalYear.textContent = member.year;
-            modalDescription.textContent = member.description;
             
-            // Handle role information for core team members
-            if (member.role) {
-                roleInfo.style.display = 'block';
-                roleContent.innerHTML = `
-                    <p class="role-title">${member.role.title}</p>
-                    <ul class="role-responsibilities">
-                        ${member.role.responsibilities.map(resp => `<li>${resp}</li>`).join('')}
-                    </ul>
-                `;
-            } else {
+            // Special handling for Riya's profile
+            if (memberId === 'riya') {
+                modal.classList.add('riya-profile');
+                modal.setAttribute('data-member', 'riya');
+                modalBranch.textContent = '';
+                modalYear.textContent = '';
+                modalDescription.textContent = '';
                 roleInfo.style.display = 'none';
+                
+                // Show resigned stamp
+                const resignedStamp = document.querySelector('.resigned-stamp');
+                resignedStamp.style.display = 'block';
+            } else {
+                modal.classList.remove('riya-profile');
+                modal.removeAttribute('data-member');
+                modalBranch.textContent = member.branch;
+                modalYear.textContent = member.year;
+                modalDescription.textContent = member.description;
+                
+                // Handle role information for other members
+                if (member.role) {
+                    roleInfo.style.display = 'block';
+                    roleContent.innerHTML = `
+                        <p class="role-title">${member.role.title}</p>
+                        <ul class="role-responsibilities">
+                            ${member.role.responsibilities.map(resp => `<li>${resp}</li>`).join('')}
+                        </ul>
+                    `;
+                } else {
+                    roleInfo.style.display = 'none';
+                }
+                
+                // Hide resigned stamp for other members
+                const resignedStamp = document.querySelector('.resigned-stamp');
+                resignedStamp.style.display = 'none';
             }
             
             modal.classList.add('active');
-            document.body.style.overflow = 'hidden';
-            feather.replace();
-        }
-        else if(member2) {            
-            modalImage.src = member2.image;
-            modalImage.alt = member2.name;
-            modalName.textContent = member2.name;
-            modalPosition.textContent = member2.position;
-            modalBranch.textContent = member2.branch;
-            modalYear.textContent = member2.year;
-            modalDescription.textContent = member2.description || '';
-            
-            // Handle role information for department heads
-            if (member2.role) {
-                roleInfo.style.display = 'block';
-                roleContent.innerHTML = `
-                    <p class="role-title">${member2.role.title}</p>
-                    <ul class="role-responsibilities">
-                        ${member2.role.responsibilities.map(resp => `<li>${resp}</li>`).join('')}
-                    </ul>
-                `;
-            } else {
-                roleInfo.style.display = 'none';
-            }
-            
-            modal.classList.add('active');
-            document.querySelector('.modal-content').style.maxWidth = '700px';
-            document.querySelector('.modal-content').style.minWidth = '60%';
-            document.querySelector('.modal-description').style.display = 'block';
-            // document.querySelector('.modal-content').style.overflowY = 'auto';
-            document.querySelector('.modal-content').style.display = 'flex';
             document.body.style.overflow = 'hidden';
             feather.replace();
         }
@@ -434,31 +423,34 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Close modal when clicking the close button
-    closeBtn.addEventListener('click', () => {
+    // Update close modal function to reset Riya's specific styles
+    function closeModal() {
         modal.classList.remove('active');
+        modal.classList.remove('riya-profile');
+        modal.removeAttribute('data-member');
         document.querySelector('.modal-content').style.maxWidth = '700px';
         document.querySelector('.modal-content').style.minWidth = '80%';
-        document.querySelector('.modal-description').style.display = 'block'; 
-        // document.querySelector('.modal-content').style.overflowY = 'auto';
-        document.querySelector('.modal-content').style.display = 'flex';            
-
+        document.querySelector('.modal-description').style.display = 'block';
+        document.querySelector('.modal-content').style.display = 'flex';
         document.body.style.overflow = '';
-    });
+        
+        // Reset resigned stamp
+        const resignedStamp = document.querySelector('.resigned-stamp');
+        resignedStamp.style.display = 'none';
+    }
 
-    // Close modal when clicking outside
+    // Update event listeners to use the new closeModal function
+    closeBtn.addEventListener('click', closeModal);
+
     modal.addEventListener('click', (e) => {
         if (e.target === modal) {
-            modal.classList.remove('active');
-            document.body.style.overflow = '';
+            closeModal();
         }
     });
 
-    // Close modal when pressing Escape key
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && modal.classList.contains('active')) {
-            modal.classList.remove('active');
-            document.body.style.overflow = '';
+            closeModal();
         }
     });
 }); 
