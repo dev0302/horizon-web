@@ -474,7 +474,7 @@
 /* Responsive Breakpoints */
 @media (min-width: 1100px) {
     .testimonial-grid{
-        grid-template-columns: repeat(5, minmax(140px, 1fr));
+        grid-template-columns: repeat(4, minmax(200px, 1fr));
         row-gap: 2.5rem;
         column-gap: 2.5rem;
     }
