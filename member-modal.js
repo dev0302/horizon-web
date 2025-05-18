@@ -21,23 +21,7 @@ const memberData = {
             ]
         }
     },
-    'riya': {
-        name: 'Riya',
-        position: 'Vice President',
-        branch: 'CSE',
-        year: '1st Year',
-        description: 'Creative thinker and effective communicator. Bringing innovative ideas to the team.',
-        image: './horizon_family_images/riya.webp',
-        role: {
-            title: 'Second-in-command and support to the President',
-            responsibilities: [
-                'Assists the President in operations and decision-making',
-                'Takes charge in the President\'s absence',
-                'Coordinates between departments for inter-departmental collaboration',
-                'Supervises the progress of society\'s short-term and long-term plans'
-            ]
-        }
-    },
+    
     'dev_malik': {
         name: 'Dev Malik',
         position: 'General Secretary and Developer',
