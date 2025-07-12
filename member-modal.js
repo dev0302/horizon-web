@@ -8,7 +8,7 @@ const memberData = {
         name: 'Udbhav',
         position: 'President',
         branch: 'ECE',
-        year: '2nd Year',
+        year: '3rd Year',
         description: 'Leading the Horizon team with dedication and vision.',
         image: './horizon_family_images/udbhav.webp',
         role: {
@@ -26,7 +26,7 @@ const memberData = {
         name: 'Dev Malik',
         position: 'General Secretary and Developer',
         branch: 'CSE',
-        year: '1st Year',
+        year: '2nd Year',
         description: 'Handles society records and documents while maintaining the official website - keeping both our operations and digital presence running smoothly.',
         image: './horizon_family_images/dev_malik.webp',
         role: {
@@ -43,7 +43,7 @@ const memberData = {
         name: 'Areen Kaur',
         position: 'General Secretary',
         branch: 'CSE',
-        year: '1st Year',
+        year: '2nd Year',
         description: 'Dedicated to organizing and managing society events with precision and creativity.',
         image: './horizon_family_images/areen.webp',
         role: {
@@ -60,7 +60,7 @@ const memberData = {
         name: 'Yash Nagar',
         position: 'Vice President',
         branch: 'CSE',
-        year: '1st Year',
+        year: '2nd Year',
         description: 'Financial strategist ensuring fiscal discipline while contributing to leadership decisions.',
         image: './horizon_family_images/yash_nagar.webp',
         role: {
@@ -80,7 +80,7 @@ const memberData2 = {
         name: 'Shiv',
         position: 'Event Management Head',
         branch: 'CSE',
-        year: '1st Year',
+        year: '2nd Year',
         image: './horizon_family_images/shiv.webp',
         role: {
             title: 'Backbone of event execution — from planning to on-ground coordination',
@@ -96,7 +96,7 @@ const memberData2 = {
         name: 'Dushyant',
         position: 'Event Management Head',
         branch: 'CSE-AIML',
-        year: '1st Year',
+        year: '2nd Year',
         image: './horizon_family_images/dushyant.webp',
         role: {
             title: 'Backbone of event execution — from planning to on-ground coordination',
@@ -112,7 +112,7 @@ const memberData2 = {
         name: 'Ananya Priya',
         position: 'Public Speaking Head',
         branch: 'CSE-AIML',
-        year: '1st Year',
+        year: '2nd Year',
         image: './horizon_family_images/ananya_priya.webp',
         role: {
             title: 'Voice and face of the society at events',
@@ -128,7 +128,7 @@ const memberData2 = {
         name: 'Krishna Bhatia',
         position: 'Public Speaking Head',
         branch: 'CSE-AIML',
-        year: '1st Year',
+        year: '2nd Year',
         image: './horizon_family_images/krishna.webp',
         role: {
             title: 'Voice and face of the society at events',
@@ -144,7 +144,7 @@ const memberData2 = {
         name: 'Aditya Pandey',
         position: 'Video Editing Head',
         branch: 'CSE-AIML',
-        year: '1st Year',
+        year: '2nd Year',
         image: './horizon_family_images/aditya_pandey.webp',
         role: {
             title: 'Storytelling through motion and visuals',
@@ -160,7 +160,7 @@ const memberData2 = {
         name: 'Aahana',
         position: 'Sponsorship Head',
         branch: 'CSE-AIML',
-        year: '1st Year',
+        year: '2nd Year',
         image: './horizon_family_images/aahana.webp',
         role: {
             title: 'Funding and resource acquisition wing',
@@ -176,7 +176,7 @@ const memberData2 = {
         name: 'Tanvi',
         position: 'Sponsorship Head',
         branch: 'CSE-AIML',
-        year: '1st Year',
+        year: '2nd Year',
         image: './horizon_family_images/tanvi.webp',
         role: {
             title: 'Funding and resource acquisition wing',
@@ -192,7 +192,7 @@ const memberData2 = {
         name: 'Shreya Sharma',
         position: 'Publicity Head',
         branch: 'CSE-AIML',
-        year: '1st Year',
+        year: '2nd Year',
         image: './horizon_family_images/shreya_sharma.webp',
         role: {
             title: 'Outreach and promotions team',
@@ -208,7 +208,7 @@ const memberData2 = {
         name: 'Shivangi',
         position: 'Publicity Head',
         branch: 'CSE-AIML',
-        year: '1st Year',
+        year: '2nd Year',
         image: './horizon_family_images/shivangi.webp',
         role: {
             title: 'Outreach and promotions team',
@@ -224,7 +224,7 @@ const memberData2 = {
         name: 'Dev Dogra',
         position: 'Social Media Head',
         branch: 'CSE-AIML',
-        year: '1st Year',
+        year: '2nd Year',
         image: './horizon_family_images/dev_dogra.webp',
         role: {
             title: 'Digital presence manager for visibility and engagement',
@@ -241,7 +241,7 @@ const memberData2 = {
         name: 'Anushka Prakash',
         position: 'Social Media Head',
         branch: 'CSE-AIML',
-        year: '1st Year',
+        year: '2nd Year',
         image: './horizon_family_images/anushka_prakash.webp',
         role: {
             title: 'Digital presence manager for visibility and engagement',
@@ -258,7 +258,7 @@ const memberData2 = {
         name: 'Pavni',
         position: 'Research & Analysis Head',
         branch: 'CSE-AIML',
-        year: '1st Year',
+        year: '2nd Year',
         image: './horizon_family_images/pavni.webp',
         role: {
             title: 'Strategy and insight team for data-backed decisions',
@@ -274,7 +274,7 @@ const memberData2 = {
         name: 'Bhavya Gupta',
         position: 'Research & Analysis Head',
         branch: 'CSE-AIML',
-        year: '1st Year',
+        year: '2nd Year',
         image: './horizon_family_images/bhavya_gupta.webp',
         role: {
             title: 'Strategy and insight team for data-backed decisions',
@@ -290,7 +290,7 @@ const memberData2 = {
         name: 'Yash Kumar',
         position: 'Creativity & Design Head',
         branch: 'CSE-AIML',
-        year: '1st Year',
+        year: '2nd Year',
         image: './horizon_family_images/yash_kumar.webp',
         role: {
             title: 'Visual brand custodian — makes everything look appealing and cohesive',
@@ -306,7 +306,7 @@ const memberData2 = {
         name: 'Dhruv',
         position: 'Creativity & Design Head',
         branch: 'CSE-AIML',
-        year: '1st Year',
+        year: '2nd Year',
         image: './horizon_family_images/dhruv.webp',
         role: {
             title: 'Visual brand custodian — makes everything look appealing and cohesive',
