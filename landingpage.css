@@ -149,6 +149,7 @@
 }
 
 .hero-title {
+  user-select: none;
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 1rem;
@@ -165,6 +166,7 @@
 }
 
 .hero-subtitle {
+  user-select: none;
   font-size: 1.1rem;
   color: var(--hero-subtext);
   max-width: 600px;
@@ -179,10 +181,11 @@
 
 @keyframes rotate {
   from {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
+
   to {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -191,6 +194,7 @@
     opacity: 0;
     transform: translateY(100%);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -203,17 +207,17 @@
     padding: 6rem 0 4rem;
     min-height: 90vh;
   }
-  
+
   .hero-title {
     font-size: 2rem;
     letter-spacing: 0.1rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1rem;
     padding: 0 1rem;
   }
-  
+
   .society-logo {
     width: 120px;
     height: 120px;
@@ -224,11 +228,11 @@
   .hero-title {
     font-size: 3.5rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1.25rem;
   }
-  
+
   .society-logo {
     width: 160px;
     height: 160px;
@@ -249,16 +253,16 @@
   .hero-section {
     padding: 8rem 0 6rem;
   }
-  
+
   .hero-title {
     font-size: 4rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1.5rem;
     max-width: 800px;
   }
-  
+
   .society-logo {
     width: 180px;
     height: 180px;
@@ -270,16 +274,16 @@
   .hero-section {
     padding: 7rem 0 5rem;
   }
-  
+
   .hero-title {
     font-size: 3.5rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1.3rem;
     max-width: 700px;
   }
-  
+
   .society-logo {
     width: 160px;
     height: 160px;
@@ -291,16 +295,16 @@
   .hero-section {
     padding: 6rem 0 4rem;
   }
-  
+
   .hero-title {
     font-size: 3rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1.2rem;
     max-width: 600px;
   }
-  
+
   .society-logo {
     width: 140px;
     height: 140px;
@@ -312,17 +316,17 @@
   .hero-section {
     padding: 5rem 0 3rem;
   }
-  
+
   .hero-title {
     font-size: 2.5rem;
     letter-spacing: 0.15rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1.1rem;
     padding: 0 1.5rem;
   }
-  
+
   .society-logo {
     width: 120px;
     height: 120px;
@@ -334,17 +338,17 @@
   .hero-section {
     padding: 4rem 0 2rem;
   }
-  
+
   .hero-title {
     font-size: 2rem;
     letter-spacing: 0.1rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1rem;
     padding: 0 1rem;
   }
-  
+
   .society-logo {
     width: 100px;
     height: 100px;
@@ -356,11 +360,11 @@
   .hero-section {
     min-height: 90vh;
   }
-  
+
   .hero-title {
     font-size: 2.5rem;
   }
-  
+
   .hero-subtitle {
     max-width: 90%;
   }
@@ -371,22 +375,23 @@
   .hero-section {
     min-height: 100vh;
   }
-  
+
   .hero-title {
     font-size: 3rem;
   }
-  
+
   .hero-subtitle {
     max-width: 80%;
   }
 }
 
 /* High DPI Screens */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
   .logo-glow {
     filter: blur(25px);
   }
-  
+
   .hero-title {
     -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.1);
   }
@@ -397,7 +402,7 @@
   .hero-section {
     background: linear-gradient(to bottom, #0f172a, #0b1f57);
   }
-  
+
   .logo-background {
     background: rgba(255, 255, 255, 0.03);
   }
@@ -408,15 +413,15 @@
   .society-logo {
     animation: none;
   }
-  
+
   .hero-title {
     animation: none;
   }
-  
+
   .hero-subtitle {
     animation: none;
   }
-  
+
   .animated-line {
     transition: none;
   }

@@ -21,7 +21,7 @@ const memberData = {
             ]
         }
     },
-    
+
     'dev_malik': {
         name: 'Dev Malik',
         position: 'General Secretary and Developer',
@@ -302,12 +302,12 @@ const memberData2 = {
             ]
         }
     },
-    'dhruv': {
-        name: 'Dhruv',
+    'Siddhant Arya': {
+        name: 'Siddhant Arya',
         position: 'Creativity & Design Head',
-        branch: 'CSE-AIML',
-        year: '2nd Year',
-        image: './horizon_family_images/dhruv.webp',
+        branch: 'ECE',
+        year: '3rd Year',
+        image: './horizon_family_images/siddhant.webp',
         role: {
             title: 'Visual brand custodian — makes everything look appealing and cohesive',
             responsibilities: [
@@ -321,7 +321,7 @@ const memberData2 = {
 };
 
 // Initialize modal functionality
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const modal = document.getElementById('memberModal');
     // const modal2 = document.querySelector('.modal-content_heads');
     const modalImage = modal.querySelector('.modal-image img');
@@ -337,13 +337,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to open modal with member data
     function openMemberModal(memberId) {
         const member = memberData[memberId] || memberData2[memberId];
-        
+
         if (member) {
             modalImage.src = member.image;
             modalImage.alt = member.name;
             modalName.textContent = member.name;
             modalPosition.textContent = member.position;
-            
+
             // Special handling for Riya's profile
             if (memberId === 'riya') {
                 modal.classList.add('riya-profile');
@@ -352,7 +352,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 modalYear.textContent = '';
                 modalDescription.textContent = '';
                 roleInfo.style.display = 'none';
-                
+
                 // Show resigned stamp
                 const resignedStamp = document.querySelector('.resigned-stamp');
                 resignedStamp.style.display = 'block';
@@ -362,7 +362,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 modalBranch.textContent = member.branch;
                 modalYear.textContent = member.year;
                 modalDescription.textContent = member.description;
-                
+
                 // Handle role information for other members
                 if (member.role) {
                     roleInfo.style.display = 'block';
@@ -375,12 +375,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 } else {
                     roleInfo.style.display = 'none';
                 }
-                
+
                 // Hide resigned stamp for other members
                 const resignedStamp = document.querySelector('.resigned-stamp');
                 resignedStamp.style.display = 'none';
             }
-            
+
             modal.classList.add('active');
             document.body.style.overflow = 'hidden';
             feather.replace();
@@ -389,7 +389,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add click event listeners to view profile buttons
     document.querySelectorAll('.view-profile-btn').forEach(button => {
-        button.addEventListener('click', function(e) {
+        button.addEventListener('click', function (e) {
             e.stopPropagation();
             const card = this.closest('.testimonial-card');
             const memberId = card.getAttribute('data-member');
@@ -399,7 +399,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add click event listeners to testimonial cards
     document.querySelectorAll('.testimonial-card').forEach(card => {
-        card.addEventListener('click', function() {
+        card.addEventListener('click', function () {
             const memberId = this.getAttribute('data-member');
             if (memberId) {
                 openMemberModal(memberId);
@@ -417,7 +417,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.modal-description').style.display = 'block';
         document.querySelector('.modal-content').style.display = 'flex';
         document.body.style.overflow = '';
-        
+
         // Reset resigned stamp
         const resignedStamp = document.querySelector('.resigned-stamp');
         resignedStamp.style.display = 'none';
